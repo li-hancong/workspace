@@ -1,746 +1,149 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自定义导航页</title>
-    <style>
-        /* 基本重置和全局样式 */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            height: 100%;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #1a1a2e; 
-            background-image: url('./BG.png'); 
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #e0e0e0; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; 
-            min-height: 100vh; 
-            padding: 20px 15px; 
-            position: relative; 
-            overflow-x: hidden; 
-        }
-
-        .page-background-frosted-overlay {
-            position: fixed; 
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(26, 26, 46, 0.35); 
-            backdrop-filter: blur(10px); 
-            -webkit-backdrop-filter: blur(10px);
-            z-index: 0; 
-        }
-
-        .hidden-svg-sprites {
-            display: none;
-            position: absolute;
-            width: 0;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .top-bar {
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; 
-            padding: 15px 0; 
-            margin: 0 auto; 
-            margin-bottom: 45px; 
-            position: relative; 
-            z-index: 2; 
-        }
-        .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #E5E7EB; 
-        }
-        .datetime-motto {
-            text-align: right;
-            color: #f0f0f0;
-        }
-        .date-weekday-line { 
-             font-size: 0.9em;
-             opacity: 0.8;
-             margin-bottom: 4px; 
-        }
-        #time-display-top {
-            font-size: 1.8em;
-            font-weight: 500;
-            display: block;
-            min-width: 120px; 
-            text-align: right; 
-        }
-        
-        .page-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            justify-content: center; 
-            flex-grow: 1; 
-            width: 100%;
-            padding-bottom: 20px; 
-            position: relative; 
-            z-index: 1;     
-        }
-        
-        .s-search {
-            width: 100%;
-            max-width: 760px;
-            background-color: transparent; 
-            padding: 0;                    
-            margin-bottom: 30px; 
-            position: relative; 
-        }
-
-        .header-nav {
-            display: flex;
-            flex-direction: column;
-            gap: 20px; 
-            width: 100%;
-        }
-        
-        .search-engine-buttons-row {
-            display: flex;
-            justify-content: center; 
-            width: 100%;
-        }
-
-        ul.search-type { 
-            display: flex;
-            flex-wrap: wrap; 
-            list-style: none;
-            gap: 10px; 
-            justify-content: center;
-            width: 100%; 
-            padding: 0; 
-        }
-        ul.search-type li {
-            flex: 0 1 auto; 
-        }
-        ul.search-type li input[type="radio"] { display: none; }
-        ul.search-type li label { 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 8px 18px; 
-            border: 1px solid #d0d7de; 
-            border-radius: 6px; 
-            cursor: pointer;
-            font-weight: 500; 
-            font-size: 0.875em; 
-            color: #24292e; 
-            transition: background-color 0.1s, border-color 0.1s, color 0.1s, box-shadow 0.1s;
-            background-color: #f0f2f5; 
-            backdrop-filter: none;              
-            -webkit-backdrop-filter: none;     
-            box-shadow: 0 1px 0 rgba(27,31,36,0.04), inset 0 1px 0 hsla(0,0%,100%,0.25); 
-        }
-        ul.search-type li label .icon {
-            width: 16px; 
-            height: 16px; 
-            margin-right: 5px;
-            flex-shrink: 0;
-            fill: currentColor; 
-        }
-         ul.search-type li label span {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 20px; 
-        }
-        ul.search-type li input[type="radio"]:checked + label { 
-            background-color: #ddf4ff; 
-            border-color: #58a6ff;    
-            color: #0969da; 
-            backdrop-filter: none;                 
-            -webkit-backdrop-filter: none;
-            box-shadow: none; 
-        }
-        ul.search-type li label:hover:not(:checked) { 
-             background-color: #e9ecef; 
-             border-color: #ced4da;
-             color: #161a1e; 
-        }
-
-        .search-input-row { 
-            display: flex; 
-            width: 100%; 
-            background-color: #f6f8fa; 
-            border-radius: 6px; 
-            border: 1px solid #d0d7de; 
-            box-shadow: 0 1px 2px rgba(27,31,36,0.04); 
-            overflow: hidden; 
-        }
-        
-        #search-text {
-            flex-grow: 1;
-            padding: 10px 12px; 
-            font-size: 0.9em; 
-            border: none; 
-            border-radius: 0; 
-            outline: 0;
-            -webkit-appearance: none;
-            background-color: transparent; 
-            color: #24292e; 
-            position: relative; 
-        }
-        #search-text::placeholder { color: #57606a; opacity: 1; } 
-        
-        #super-search-fm .submit {
-            padding: 0; 
-            background-color: #0d6efd; 
-            color: white; 
-            border: none; 
-            border-radius: 0; 
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.2s;
-            width: auto;
-            min-width: 50px; 
-            padding: 0 12px; 
-        }
-        #super-search-fm .submit:hover { background-color: #0b5ed7; } 
-        #super-search-fm .submit .icon {
-            width: 18px; 
-            height: 18px;
-            margin: 0; 
-            fill: currentColor; 
-        }
-        #super-search-fm .submit span { display: none; }
-        
-        .set-check { 
-            margin-top: 15px; 
-            font-size: 0.85em;
-            color: #E0E0E0; 
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .set-check input[type="checkbox"] { accent-color: #3b82f6; }
-        .set-check label { cursor: pointer; }
-
-        .bookmarks-container {
-            width: 100%;
-            max-width: 960px;
-            background-color: transparent; 
-            padding: 0; 
-            position: relative; 
-        }
-
-        .bookmark-category {
-            background-color: transparent; 
-            padding: 10px 0;              
-            margin-bottom: 25px;          
-        }
-        .bookmark-category:last-child { margin-bottom: 0; }
-
-        .category-title {
-            font-size: 1.15em; 
-            color: #FFFFFF; 
-            margin-top: 0;
-            margin-bottom: 15px; 
-            padding-bottom: 10px;
-            border-bottom: none; 
-            font-weight: 500; 
-            letter-spacing: 0.5px;
-        }
-
-        .bookmark-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
-            gap: 18px; 
-        }
-
-        .bookmark-list li a {
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;   
-            justify-content: flex-start; 
-            padding: 8px 5px;     
-            background-color: transparent; 
-            color: #FFFFFF; 
-            text-decoration: none;
-            border-radius: 6px; 
-            border: 1px solid transparent;
-            transition: color 0.2s, transform 0.15s ease-out, background-color 0.2s, border-color 0.2s;
-            font-size: 0.8em; 
-            overflow: visible; 
-            gap: 5px; 
-            min-height: auto; 
-        }
-        .bookmark-list li a:hover {
-            color: #f0f8ff; 
-            transform: translateY(-2px);
-            background-color: rgba(255, 255, 255, 0.08); 
-            border-color: rgba(255,255,255,0.15);      
-        }
-        .bookmark-favicon { 
-            width: 32px;  
-            height: 32px;
-            flex-shrink: 0; 
-            border-radius: 6px; 
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
-            object-fit: contain; 
-            background-color: rgba(255,255,255,0.1); 
-        }
-        .bookmark-list li a span { 
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-align: center; 
-            max-width: 100%; 
-            margin-top: 3px; 
-            font-size: 0.9em; 
-            line-height: 1.3; 
-        }
-        
-        /* --- 响应式调整 --- */
-        @media (max-width: 768px) { 
-            body { justify-content: flex-start; }
-            .top-bar { padding: 10px 15px; margin-bottom: 30px; }
-            .page-wrapper { justify-content: flex-start; }
-            .logo { font-size: 1.5em; }
-            #time-display-top { font-size: 1.5em; min-width: 115px; } 
-            
-            ul.search-type { 
-                display: flex;      
-                flex-wrap: wrap;
-                justify-content: space-between; 
-                gap: 8px; 
-                width: 100%; 
-                padding:0;
-            }
-            ul.search-type li {
-                flex-grow: 1;     
-                flex-shrink: 1;
-                flex-basis: calc(50% - 4px); 
-                max-width: calc(50% - 4px);  
-            }
-            ul.search-type li label { 
-                display: flex;
-                width: 100%; 
-                max-width: none; 
-                font-size: 0.875em; 
-                padding: 10px 10px; 
-                backdrop-filter: blur(3px);              
-                -webkit-backdrop-filter: blur(3px);   
-            }
-            ul.search-type li input[type="radio"]:checked + label {
-                 backdrop-filter: blur(5px);                 
-                -webkit-backdrop-filter: blur(5px);
-            }
-            ul.search-type li label .icon { margin-right: 4px; width: 14px; height: 14px;}
-            
-            #search-text, #super-search-fm .submit { font-size: 0.95em; }
-            #search-text { padding: 10px 14px; }
-            #super-search-fm .submit .icon { width:18px; height:18px; margin: 0 10px;}
-
-            .bookmark-category { padding: 0; margin-bottom: 20px;}
-            .category-title { font-size: 1.1em; }
-            .bookmark-list { grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); gap: 12px; }
-            .bookmark-favicon { width: 30px; height: 30px; }
-            .bookmark-list li a span { font-size: 0.9em; }
-        }
-
-        @media (max-width: 600px) { 
-            body { padding: 15px; }
-            .top-bar {
-                flex-direction: column; 
-                align-items: center; 
-                gap:8px; 
-                margin-bottom: 20px;
-                position: relative; 
-                transform: none;
-                left: auto;
-                padding: 10px 0; 
-            }
-            .datetime-motto {
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-                text-align: center; 
-            }
-            .date-weekday-line{margin-bottom: 2px;}
-            #time-display-top { 
-                font-size: 1.3em; 
-                min-width: auto;
-                text-align:center; 
-            } 
-            ul.search-type li label { 
-                font-size: 0.85em; 
-                padding-top: 12px;    
-                padding-bottom: 12px;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            #search-text, #super-search-fm .submit { font-size: 0.9em; }
-            
-            .bookmark-category { padding: 0; }
-            .category-title { font-size: 1.05em; margin-bottom: 10px; padding-bottom: 6px;}
-            .bookmark-list { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); } 
-            .bookmark-favicon { width: 28px; height: 28px; }
-            .bookmark-list li a { min-height: auto; padding: 8px 4px; gap: 4px; }
-            .bookmark-list li a span { font-size: 0.85em; }
-        }
-         @media (max-width: 420px) {
-            ul.search-type {
-                gap: 6px; 
-            }
-             ul.search-type li { 
-                flex-basis: calc(50% - 3px); 
-                max-width: calc(50% - 3px);
-            }
-            ul.search-type li label {
-                font-size: 0.8em;
-                padding: 8px 5px; 
-            }
-            ul.search-type li label .icon {
-                width: 12px; 
-                height: 12px;
-                margin-right: 3px;
-            }
-            .bookmark-list { grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); gap: 10px; }
-            .bookmark-favicon { width: 26px; height: 26px; }
-            .bookmark-list li a { padding: 6px 2px; gap: 3px; }
-             .bookmark-list li a span { font-size: 0.8em; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Li Hancong Workspace 登录入口" />
+  <title>登录 · Li Hancong Workspace</title>
+  <style>
+    :root {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      color: #202124;
+      background: #f8fafd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px 18px;
+      background:
+        radial-gradient(circle at 15% 12%, rgba(26,115,232,.10), transparent 32%),
+        radial-gradient(circle at 86% 85%, rgba(52,168,83,.07), transparent 28%),
+        linear-gradient(180deg, #fbfdff 0%, #f3f6fa 100%);
+    }
+    .shell { width: min(1040px, 100%); display: grid; grid-template-columns: 1.05fr .95fr; background: #fff; border: 1px solid #e3e7ed; border-radius: 24px; overflow: hidden; box-shadow: 0 22px 65px rgba(60,64,67,.12); }
+    .intro { padding: 56px; background: linear-gradient(145deg, #f8fbff, #edf4ff); border-right: 1px solid #e6ebf1; display: flex; flex-direction: column; justify-content: space-between; min-height: 620px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: -.01em; }
+    .logo { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; background: #1a73e8; color: #fff; box-shadow: 0 8px 20px rgba(26,115,232,.20); }
+    .hero { max-width: 460px; }
+    .kicker { color: #1967d2; font-size: 13px; font-weight: 750; letter-spacing: .10em; text-transform: uppercase; }
+    h1 { margin: 16px 0 14px; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; letter-spacing: -.045em; }
+    .hero p { margin: 0; color: #5f6368; font-size: 16px; line-height: 1.8; }
+    .meta { color: #7a8088; font-size: 13px; line-height: 1.6; }
+    .login { padding: 56px; display: flex; align-items: center; }
+    .form { width: 100%; }
+    .form h2 { margin: 0; font-size: 28px; letter-spacing: -.025em; }
+    .form .sub { margin: 8px 0 30px; color: #5f6368; font-size: 14px; line-height: 1.6; }
+    label { display: block; margin: 0 0 8px; color: #3c4043; font-size: 13px; font-weight: 650; }
+    .field { margin-bottom: 18px; }
+    input { width: 100%; height: 48px; border: 1px solid #cfd5dd; border-radius: 12px; padding: 0 14px; font: inherit; color: #202124; background: #fff; outline: none; transition: border-color .15s, box-shadow .15s; }
+    input:focus { border-color: #1a73e8; box-shadow: 0 0 0 3px rgba(26,115,232,.12); }
+    .button { width: 100%; height: 48px; border: 0; border-radius: 12px; background: #1a73e8; color: #fff; font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 8px 18px rgba(26,115,232,.18); transition: transform .12s, background .15s; }
+    .button:hover:not(:disabled) { background: #1765cc; }
+    .button:active:not(:disabled) { transform: translateY(1px); }
+    .button:disabled { cursor: not-allowed; opacity: .55; box-shadow: none; }
+    .message { min-height: 46px; margin-top: 18px; padding: 12px 14px; border-radius: 11px; font-size: 13px; line-height: 1.55; display: none; }
+    .message.show { display: block; }
+    .message.info { color: #174ea6; background: #e8f0fe; border: 1px solid #d2e3fc; }
+    .message.error { color: #b3261e; background: #fce8e6; border: 1px solid #f6cbc7; }
+    .message.success { color: #137333; background: #e6f4ea; border: 1px solid #ceead6; }
+    .security { margin-top: 22px; display: flex; gap: 9px; align-items: flex-start; color: #777d85; font-size: 12px; line-height: 1.55; }
+    .dot { margin-top: 5px; width: 8px; height: 8px; border-radius: 999px; background: #34a853; flex: 0 0 auto; }
+    @media (max-width: 820px) {
+      .shell { grid-template-columns: 1fr; max-width: 560px; }
+      .intro { min-height: auto; padding: 34px; border-right: 0; border-bottom: 1px solid #e6ebf1; gap: 46px; }
+      .hero h1 { font-size: 40px; }
+      .login { padding: 34px; }
+    }
+    @media (max-width: 480px) { body { padding: 0; background: #fff; } .shell { border: 0; border-radius: 0; box-shadow: none; min-height: 100vh; } .intro, .login { padding: 28px 22px; } }
+  </style>
 </head>
 <body>
-    <div class="page-background-frosted-overlay"></div>
+  <main class="shell">
+    <section class="intro">
+      <div class="brand"><div class="logo">LH</div><span>Li Hancong Workspace</span></div>
+      <div class="hero">
+        <div class="kicker">Secure Workspace</div>
+        <h1>一个入口，连接你的私人工作空间。</h1>
+        <p>为文件、测试报告、图片与数据看板预留统一入口。正式域名将使用 <strong>www.lihancong.com</strong>。</p>
+      </div>
+      <div class="meta">GitHub Pages 静态前端 · Supabase Auth 身份认证 · HTTPS 正式域名</div>
+    </section>
 
-    <svg class="hidden-svg-sprites" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="icon-bing" viewBox="0 0 1024 1024"><path d="M340.5824 70.109867L102.536533 0.682667v851.217066L340.650667 643.345067V70.109867zM102.536533 851.7632l238.045867 171.6224 580.881067-340.923733V411.784533L102.536533 851.831467z" fill="#3894FB"></path><path d="M409.463467 255.3856l113.732266 238.933333 138.8544 56.866134 259.413334-139.400534-506.0608-156.330666z" fill="#3894FB"></path></symbol>
-        <symbol id="icon-icon_baidulogo" viewBox="0 0 1024 1024"><path d="M184.682058 538.758771c111.176877-23.873478 96.029086-156.736593 92.70169-185.775677-5.444828-44.768588-58.101436-123.020542-129.605526-116.831122-89.979276 8.074168-103.125977 138.051991-103.125977 138.051991-12.169424 60.079258 29.132158 188.451554 140.029813 164.554808z m118.064352 231.102709c-3.25759 9.330667-10.51736 33.227413-4.234867 54.029449 12.402109 46.676604 52.912561 48.770769 52.912562 48.770769h58.217778V730.351572h-62.336302c-28.01527 8.35339-41.534266 30.155972-44.559171 39.509908z m88.280676-453.898564c61.405563 0 111.037266-70.666424 111.037266-158.039629 0-87.280131-49.631703-157.923287-111.037266-157.923287-61.312489 0-111.060534 70.643156-111.060534 157.923287 0 87.373205 49.771314 158.039629 111.060534 158.039629z m264.469733 10.447555c82.067988 10.656971 134.840938-76.92565 145.33503-143.310671 10.703508-66.291947-42.25559-143.287402-100.357026-156.527177-58.217779-13.356117-130.908562 79.904017-137.540084 140.704599-7.911289 74.319578 10.633703 148.59262 92.56208 159.133249z m201.086348 390.212688s-126.976186-98.239593-201.109617-204.413743c-100.473368-156.550445-243.202327-92.841302-290.949282-13.216506-47.537539 79.601527-121.624432 129.954554-132.141792 143.287403-10.68024 13.123432-153.38593 90.165424-121.694237 230.870023 31.668424 140.611525 142.938375 137.935648 142.938374 137.935648s81.998182 8.074168 177.119797-13.216506c95.168151-21.104526 177.096528 5.25868 177.096528 5.258681s222.283948 74.435921 283.107798-68.851482c60.754045-143.333939-34.36757-217.653518-34.367569-217.653518z m-380.323578 213.255772h-144.520632c-62.406108-12.448646-87.256862-55.029995-90.39811-62.289765-3.071442-7.376113-20.802036-41.604072-11.424832-99.845119 26.968188-87.256862 103.870569-93.516088 103.870569-93.516088h76.92565v-94.563171l65.524087 1.000546v349.213597z m269.146701-1.000545h-166.299946c-64.453736-16.613707-67.455372-62.406108-67.455371-62.406108v-183.890929l67.455371-1.093619v165.276131c4.118524 17.63752 26.014179 20.825304 26.01418 20.825305h68.525722v-185.007817h71.760044v246.297037z m235.40738-490.988548c0-31.761498-26.386475-127.395019-124.230503-127.395019-98.006908 0-111.107071 90.258498-111.107072 154.060716 0 60.893656 5.142338 145.893474 126.883112 143.194329 121.787311-2.699146 108.454463-137.935648 108.454463-169.860026z m0 0" fill="#3245DF"></path></symbol>
-        <symbol id="icon-google00" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path><path d="M1 1h22v22H1z" fill="none"></path></symbol>
-        <symbol id="icon-youdao00" viewBox="0 0 1024 1024"><path d="M931.84 1024H92.16c-51.2 0-92.16-40.96-92.16-92.16V92.16C0 40.96 40.96 0 92.16 0h837.12c51.2 0 92.16 40.96 92.16 92.16v837.12c2.56 53.76-38.4 94.72-89.6 94.72z" fill="#D20B0A"></path><path d="M552.96 632.32c33.28-40.96 43.52-74.24 30.72-99.84-15.36-28.16-35.84-51.2-71.68-56.32-2.56 23.04-5.12 43.52-7.68 56.32 17.92 15.36 33.28 25.6 40.96 38.4 10.24 15.36-2.56 38.4-20.48 38.4-35.84 0-64-30.72-58.88-66.56 0-7.68 0-12.8 2.56-20.48 17.92-81.92-35.84-110.08-97.28-110.08-43.52 0-87.04 7.68-130.56 10.24 5.12-35.84 35.84-38.4 66.56-38.4 51.2-2.56 99.84-5.12 151.04-10.24 17.92-2.56 38.4-5.12 35.84-30.72h-199.68c5.12-12.8 10.24-23.04 17.92-38.4-20.48-10.24-38.4-17.92-61.44-30.72-12.8 71.68-56.32 94.72-122.88 71.68-5.12 58.88 40.96 35.84 71.68 48.64-40.96 51.2-76.8 97.28-117.76 148.48 38.4 7.68 61.44-20.48 97.28-38.4-15.36 79.36-28.16 151.04-43.52 222.72 30.72 7.68 56.32-5.12 69.12-35.84 7.68-20.48 10.24-40.96 17.92-58.88 23.04-71.68 99.84-122.88 179.2-104.96-2.56 10.24-2.56 17.92-5.12 28.16-20.48 0-40.96 0-58.88 2.56-33.28 5.12-61.44 20.48-69.12 56.32-7.68 33.28 2.56 61.44 30.72 81.92 40.96 28.16 89.6 38.4 143.36 38.4 5.12-28.16 7.68-56.32 12.8-87.04 12.8 7.68 20.48 12.8 30.72 15.36 74.24 40.96 151.04 76.8 238.08 87.04 84.48 10.24 158.72-15.36 217.6-76.8 5.12-5.12 10.24-15.36 12.8-23.04-143.36 76.8-273.92 53.76-401.92-17.92z m-161.28-168.96c-53.76 20.48-107.52 40.96-158.72 58.88-5.12-35.84 0-53.76 38.4-61.44 28.16-7.68 58.88-7.68 87.04-7.68h12.8c30.72 0 20.48 10.24 20.48 10.24z m-7.68 148.48c-5.12 25.6-7.68 51.2-12.8 76.8h-5.12-2.56-2.56-2.56c-2.56 0-2.56 0-5.12-2.56-2.56 0-5.12-2.56-5.12-2.56s-2.56 0-2.56-2.56c0 0-2.56 0-2.56-2.56 0 0-2.56 0-2.56-2.56h-2.56l-2.56-2.56c-2.56 0-2.56-2.56-2.56-2.56-2.56-2.56-5.12-5.12-5.12-7.68l-2.56-2.56s0-2.56-2.56-2.56c-2.56-5.12-2.56-12.8-2.56-17.92v-2.56c2.56-28.16 25.6-35.84 64-25.6z" fill="#FFFFFF"></path><path d="M924.16 340.48c-28.16 2.56-53.76 2.56-87.04 5.12 12.8-17.92 20.48-28.16 28.16-40.96-20.48-10.24-38.4-17.92-56.32-25.6-30.72 20.48-33.28 64-74.24 71.68-5.12-23.04-7.68-46.08-10.24-66.56-53.76 7.68-56.32 12.8-46.08 69.12h-81.92c0 33.28 7.68 40.96 43.52 40.96h74.24c0 2.56 2.56 7.68 2.56 10.24-15.36 5.12-33.28 10.24-48.64 17.92-15.36 7.68-40.96 17.92-43.52 30.72-12.8 56.32-17.92 115.2-25.6 176.64 76.8 48.64 161.28 40.96 250.88 28.16 5.12-33.28 7.68-61.44 12.8-89.6 2.56-28.16 10.24-56.32 10.24-84.48 2.56-40.96-12.8-58.88-51.2-66.56-15.36-2.56-33.28-5.12-48.64-7.68 0-2.56-2.56-5.12-2.56-7.68 15.36-5.12 30.72-10.24 48.64-12.8 28.16-5.12 56.32-5.12 81.92-10.24 12.8-7.68 30.72-12.8 23.04-38.4zM788.48 614.4c-43.52 17.92-84.48 12.8-125.44 0 0-2.56 2.56-5.12 5.12-7.68 2.56-2.56 2.56-5.12 5.12-7.68l2.56-2.56 2.56-2.56 2.56-2.56c2.56-2.56 5.12-2.56 7.68-5.12 0 0 2.56 0 2.56-2.56 5.12-2.56 7.68-2.56 12.8-5.12h53.76c10.24 0 20.48 2.56 33.28 5.12-2.56 0 30.72 7.68-2.56 30.72z m-5.12-79.36s-2.56 0 0 0h-2.56-2.56-2.56c-5.12 0-7.68 2.56-12.8 2.56-7.68 2.56-17.92 2.56-25.6 5.12l-53.76 7.68c-5.12 0-7.68 2.56-12.8 2.56v-5.12-2.56-2.56-2.56c0-2.56 0-5.12 2.56-7.68 5.12-10.24 12.8-15.36 25.6-20.48 2.56 0 2.56 0 5.12-2.56h17.92c25.6-2.56 51.2 0 76.8 0 38.4 0-2.56 20.48-15.36 25.6z m17.92-74.24c-40.96 7.68-81.92 15.36-120.32 23.04-5.12-23.04 5.12-35.84 30.72-40.96 46.08-12.8 74.24-7.68 89.6 17.92zM517.12 427.52l7.68-61.44c46.08 10.24 74.24 58.88 61.44 107.52-12.8-7.68-23.04-15.36-33.28-23.04-10.24-7.68-23.04-12.8-35.84-23.04zM320 660.48c2.56 2.56 2.56 5.12 5.12 7.68 0-2.56-2.56-5.12-5.12-7.68zM371.2 688.64c-20.48-5.12-35.84-10.24-46.08-20.48 10.24 10.24 25.6 17.92 46.08 20.48z" fill="#FFFFFF"></path><path d="M673.28 596.48c-2.56 2.56-5.12 5.12-5.12 7.68 0-2.56 2.56-5.12 5.12-7.68zM783.36 535.04zM683.52 552.96c-5.12 0-7.68 2.56-12.8 2.56 5.12-2.56 7.68-2.56 12.8-2.56zM778.24 535.04c0 2.56 0 2.56 0 0-5.12 2.56-10.24 2.56-15.36 5.12 5.12-2.56 10.24-2.56 15.36-5.12 0 2.56 0 2.56 0 0zM780.8 535.04s-2.56 0 0 0c-2.56 0 0 0 0 0zM780.8 535.04zM796.16 506.88c-25.6 0-51.2-2.56-76.8 0h-7.68 7.68c25.6-2.56 53.76 0 76.8 0zM780.8 535.04zM780.8 535.04zM783.36 535.04z" fill="#FFFFFF"></path>
-        </symbol>
-        
-        <symbol id="icon-sousuo" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-        </symbol>
-    </svg>
+    <section class="login">
+      <form class="form" id="loginForm" novalidate>
+        <h2>欢迎回来</h2>
+        <p class="sub">使用已授权的邮箱和密码登录。</p>
 
-    <div class="top-bar">
-        <div class="logo">LOGO</div> 
-        <div class="datetime-motto">
-            <div class="date-weekday"><span id="date-display-top"></span> <span id="weekday-display-top"></span></div>
-            <div id="time-display-top"></div>
-        </div>
-    </div>
-
-    <div class="page-wrapper">
-        <div id="search" class="s-search">
-            <div class="header-nav"> 
-                <div id="search-list" class="search-engine-buttons-row">
-                    <div class="search-group group-a s-current">
-                        <ul class="search-type">
-                            <li>
-                                <input type="radio" name="search-engine-type" id="type-baidu" value="baidu" data-placeholder="百度一下，你就知道" checked>
-                                <label for="type-baidu">
-                                    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon_baidulogo"></use></svg>
-                                    <span>百度一下</span>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="search-engine-type" id="type-bing" value="bing" data-placeholder="Bing 必应搜索">
-                                <label for="type-bing">
-                                    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-bing"></use></svg>
-                                    <span>Bing必应</span>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="search-engine-type" id="type-google" value="google" data-placeholder="谷歌搜索">
-                                <label for="type-google">
-                                    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-google00"></use></svg>
-                                    <span>谷歌搜索</span>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="search-engine-type" id="type-youdao" value="youdao" data-placeholder="输入单词或句子查询">
-                                <label for="type-youdao">
-                                    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-youdao00"></use></svg>
-                                    <span>有道词典</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <form id="super-search-fm" class="search-input-row" method="get">
-                    <input type="text" id="search-text" placeholder="百度一下，你就知道" autocomplete="off">
-                    <button class="submit" type="submit">
-                        <svg class="icon" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg>
-                        <span></span>
-                    </button>
-                </form>
-            </div>
-            
-            <div class="set-check hidden-xs">
-                <input type="checkbox" id="set-search-blank" autocomplete="off" checked>
-                <label for="set-search-blank">在新标签页中打开</label>
-            </div>
+        <div class="field">
+          <label for="email">邮箱</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
         </div>
 
-        <div id="bookmarks-section" class="bookmarks-container">
-            </div>
-    </div>
+        <div class="field">
+          <label for="password">密码</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="输入密码" required />
+        </div>
 
+        <button class="button" id="loginButton" type="submit">登录</button>
+        <div class="message" id="message" role="status" aria-live="polite"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const dateDisplayTop = document.getElementById('date-display-top');
-            const timeDisplayTop = document.getElementById('time-display-top');
-            const weekdayDisplayTop = document.getElementById('weekday-display-top');
+        <div class="security"><span class="dot"></span><span>密码不会写入 GitHub 仓库。认证由 Supabase Auth 完成，敏感密钥不得放在前端。</span></div>
+      </form>
+    </section>
+  </main>
 
-            const searchForm = document.getElementById('super-search-fm');
-            const searchInput = document.getElementById('search-text');
-            const engineRadioButtons = document.querySelectorAll('input[name="search-engine-type"]');
-            const openInNewTabCheckbox = document.getElementById('set-search-blank');
-            
-            const bookmarksContainer = document.getElementById('bookmarks-section');
+  <script type="module">
+    import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+    import { APP_CONFIG, isAuthConfigured } from "./config.js";
 
-            const searchServices = {
-                'baidu': { urlFormat: 'https://www.baidu.com/s?wd=%s', placeholder: '百度一下，你就知道' },
-                'bing': { urlFormat: 'https://www.bing.com/search?q=%s', placeholder: 'Bing 必应搜索' },
-                'google': { urlFormat: 'https://www.google.com/search?q=%s', placeholder: '谷歌搜索' },
-                'youdao': { urlFormat: 'https://dict.youdao.com/search?q=%s',  placeholder: '输入单词或句子查询' }
-            };
-            let currentServiceKey = 'baidu'; 
+    const form = document.querySelector("#loginForm");
+    const button = document.querySelector("#loginButton");
+    const message = document.querySelector("#message");
+    const email = document.querySelector("#email");
+    const password = document.querySelector("#password");
 
-            const bookmarkCategoriesData = [ 
-                { name: "常用导航", sites: [
-                        { name: "百度", url: "https://www.baidu.com" }, { name: "淘宝", url: "https://www.taobao.com" },
-                        { name: "京东", url: "https://www.jd.com" }, { name: "微信", url: "https://weixin.qq.com/" },
-                        { name: "微博", url: "https://www.weibo.com" }, { name: "QQ", url: "https://im.qq.com/" },
-                        { name: "Google", url: "https://www.google.com" }, { name: "Gmail", url: "https://mail.google.com" },
-                        { name: "知乎", url: "https://www.zhihu.com" }, { name: "什么值得买", url: "https://www.smzdm.com" },
-                        { name: "大众点评", url: "https://www.dianping.com" }, { name: "高德地图", url: "https://www.amap.com" }
-                    ]},
-                { name: "视频", sites: [
-                        { name: "哔哩哔哩", url: "https://www.bilibili.com" }, { name: "腾讯视频", url: "https://v.qq.com" },
-                        { name: "爱奇艺", url: "https://www.iqiyi.com" }, { name: "优酷", url: "https://www.youku.com" },
-                        { name: "YouTube", url: "https://www.youtube.com" }, { name: "抖音", url: "https://www.douyin.com" },
-                        { name: "西瓜视频", url: "https://www.ixigua.com" }, { name: "芒果TV", url: "https://www.mgtv.com" },
-                        { name: "Netflix", url: "https://www.netflix.com" }, { name: "Vimeo", url: "https://vimeo.com" },
-                        { name: "Twitch", url: "https://www.twitch.tv" }, { name: "AcFun", url: "https://www.acfun.cn" }
-                    ]},
-                { name: "学习", sites: [
-                        { name: "中国大学MOOC", url: "https://www.icourse163.org" }, { name: "学堂在线", url: "https://www.xuetangx.com" },
-                        { name: "网易公开课", url: "https://open.163.com" }, { name: "慕课网", url: "https://www.imooc.com" },
-                        { name: "Coursera", url: "https://www.coursera.org" }, { name: "edX", url: "https://www.edx.org" },
-                        { name: "Khan Academy", url: "https://www.khanacademy.org" }, { name: "TED Talks", url: "https://www.ted.com" },
-                        { name: "Duolingo", url: "https://www.duolingo.com" }, { name: "Wikipedia", url: "https://www.wikipedia.org" },
-                        { name: "得到App", url: "https://www.dedao.cn" }, { name: "Wolfram Alpha", url: "https://www.wolframalpha.com" }
-                    ]},
-                { name: "办公", sites: [
-                        { name: "腾讯文档", url: "https://docs.qq.com" }, { name: "金山文档", url: "https://www.kdocs.cn" },
-                        { name: "石墨文档", url: "https://shimo.im" }, { name: "Google Drive", url: "https://drive.google.com" },
-                        { name: "Office 365", url: "https://www.office.com" }, { name: "语雀", url: "https://www.yuque.com" },
-                        { name: "飞书", url: "https://www.feishu.cn" }, { name: "钉钉", url: "https://www.dingtalk.com" },
-                        { name: "Notion", url: "https://www.notion.so" }, { name: "Trello", url: "https://trello.com" },
-                        { name: "Zoom", url: "https://zoom.us" }, { name: "印象笔记", url: "https://www.yinxiang.com" }
-                    ]},
-                { name: "编程", sites: [
-                        { name: "GitHub", url: "https://github.com" }, { name: "Stack Overflow", url: "https://stackoverflow.com" },
-                        { name: "CSDN", url: "https://www.csdn.net" }, { name: "掘金", url: "https://juejin.cn" },
-                        { name: "LeetCode (CN)", url: "https://leetcode.cn" }, { name: "MDN Web Docs", url: "https://developer.mozilla.org" },
-                        { name: "W3Schools", url: "https://www.w3schools.com" }, { name: "freeCodeCamp", url: "https://www.freecodecamp.org" },
-                        { name: "V2EX", url: "https://www.v2ex.com" }, { name: "Gitee", url: "https://gitee.com" },
-                        { name: "CodePen", url: "https://codepen.io" }, { name: "Repl.it", url: "https://replit.com" }
-                    ]},
-                { name: "博客", sites: [
-                        { name: "简书", url: "https://www.jianshu.com" }, { name: "Medium", url: "https://medium.com" },
-                        { name: "Dev.to", url: "https://dev.to" }, { name: "少数派", url: "https://sspai.com" },
-                        { name: "虎嗅网", url: "https://www.huxiu.com" }, { name: "36氪", url: "https://36kr.com" },
-                        { name: "Readhub", url: "https://readhub.cn" }, { name: "Hacker News", url: "https://news.ycombinator.com" },
-                        { name: "Reddit", url: "https://www.reddit.com" }, { name: "Pocket", url: "https://getpocket.com" },
-                        { name: "Feedly", url: "https://feedly.com" }, { name: "cnBeta", url: "https://www.cnbeta.com.tw" }
-                    ]}
-            ];
+    function show(text, type = "info") {
+      message.textContent = text;
+      message.className = `message show ${type}`;
+    }
 
-            function updateTopDateTime() {
-                const now = new Date();
-                const year = now.getFullYear();
-                const month = (now.getMonth() + 1).toString().padStart(2, '0');
-                const day = now.getDate().toString().padStart(2, '0');
-                if (dateDisplayTop) dateDisplayTop.textContent = `${year}年${month}月${day}日`;
-                const hours = now.getHours().toString().padStart(2, '0');
-                const minutes = now.getMinutes().toString().padStart(2, '0');
-                const seconds = now.getSeconds().toString().padStart(2, '0'); 
-                if (timeDisplayTop) timeDisplayTop.textContent = `${hours}:${minutes}:${seconds}`; 
-                const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-                if (weekdayDisplayTop) weekdayDisplayTop.textContent = weekdays[now.getDay()];
-            }
-            
-            if (dateDisplayTop && timeDisplayTop && weekdayDisplayTop) {
-                updateTopDateTime();
-                setInterval(updateTopDateTime, 1000); 
-            }
+    if (!isAuthConfigured()) {
+      button.disabled = true;
+      email.disabled = true;
+      password.disabled = true;
+      show("前端已完成部署，真实登录服务等待 Supabase 项目配置。配置完成后无需改页面即可启用。", "info");
+    } else {
+      const supabase = createClient(APP_CONFIG.supabaseUrl, APP_CONFIG.supabasePublishableKey);
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) location.replace("./dashboard.html");
 
-            function updateFormVisuals(serviceKey) { 
-                const service = searchServices[serviceKey];
-                if (service) {
-                    searchInput.placeholder = service.placeholder;
-                    currentServiceKey = serviceKey;
-                }
-            }
-            
-            function updateFormTargetSetting() { 
-                localStorage.setItem('openInNewTab', openInNewTabCheckbox.checked);
-            }
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const userEmail = email.value.trim();
+        const userPassword = password.value;
+        if (!userEmail || !userPassword) {
+          show("请输入邮箱和密码。", "error");
+          return;
+        }
+        button.disabled = true;
+        button.textContent = "正在验证…";
+        show("正在安全验证登录信息…", "info");
 
-            if (localStorage.getItem('openInNewTab') !== null) {
-                openInNewTabCheckbox.checked = localStorage.getItem('openInNewTab') === 'true';
-            }
-            openInNewTabCheckbox.addEventListener('change', updateFormTargetSetting);
-
-            let lastSelectedService = localStorage.getItem('selectedSearchService');
-            if (!searchServices[lastSelectedService]) { 
-                lastSelectedService = 'baidu'; 
-                localStorage.setItem('selectedSearchService', lastSelectedService);
-            }
-            currentServiceKey = lastSelectedService;
-            
-            const radioToSelect = document.getElementById('type-' + currentServiceKey);
-            if (radioToSelect) { radioToSelect.checked = true; } 
-            else { 
-                document.getElementById('type-baidu').checked = true;
-                currentServiceKey = 'baidu';
-                localStorage.setItem('selectedSearchService', currentServiceKey);
-            }
-            updateFormVisuals(currentServiceKey);
-
-            engineRadioButtons.forEach(radio => {
-                radio.addEventListener('change', function() {
-                    if (this.checked) {
-                        updateFormVisuals(this.value);
-                        localStorage.setItem('selectedSearchService', this.value);
-                    }
-                });
-            });
-
-            searchForm.addEventListener('submit', function(event) {
-                event.preventDefault(); 
-                const query = searchInput.value.trim();
-                if (!query) { searchInput.focus(); return; }
-                let targetUrl = '';
-                let isDirectNavigation = false;
-                if (/^[a-zA-Z][a-zA-Z0-9+.-]*:\/\//.test(query)) { 
-                    targetUrl = query; isDirectNavigation = true;
-                } else if (!query.includes(' ') && query.includes('.') && !query.startsWith('.') && !query.endsWith('.')) { 
-                    const hostPart = query.split('/')[0];
-                    if (hostPart.toLowerCase().startsWith('localhost')) {
-                        targetUrl = 'http://' + query; isDirectNavigation = true;
-                    } else if (/^(\d{1,3}\.){3}\d{1,3}(:\d+)?$/.test(hostPart)) { 
-                        targetUrl = 'http://' + query; isDirectNavigation = true;
-                    } else { 
-                        const domainNameOnly = hostPart.split(':')[0];
-                        const lastDotIndex = domainNameOnly.lastIndexOf('.');
-                        if (lastDotIndex > 0 && lastDotIndex < domainNameOnly.length - 1) {
-                            const tld = domainNameOnly.substring(lastDotIndex + 1);
-                            if (/^[a-zA-Z]{2,}$/.test(tld)) { 
-                                targetUrl = 'http://' + query; isDirectNavigation = true;
-                            }
-                        }
-                    }
-                }
-                if (!isDirectNavigation) {
-                    const service = searchServices[currentServiceKey];
-                    if (service && service.urlFormat) {
-                        targetUrl = service.urlFormat.replace('%s', encodeURIComponent(query));
-                    } else {
-                        console.error("当前服务配置错误 (回退到百度):", currentServiceKey);
-                        targetUrl = searchServices['baidu'].urlFormat.replace('%s', encodeURIComponent(query)); 
-                    }
-                }
-                if (targetUrl) {
-                    if (openInNewTabCheckbox.checked) { window.open(targetUrl, '_blank'); } 
-                    else { window.location.href = targetUrl; }
-                }
-            });
-            
-            function renderBookmarks(categories) {
-                if (!bookmarksContainer || !categories || categories.length === 0) {
-                    if(bookmarksContainer) bookmarksContainer.innerHTML = '<p style="text-align:center; color:#aaa; padding: 20px 0;">暂无书签数据。请在脚本中编辑 bookmarkCategoriesData 添加书签。</p>';
-                    return;
-                }
-                bookmarksContainer.innerHTML = ''; 
-                categories.forEach(category => {
-                    const categoryDiv = document.createElement('div');
-                    categoryDiv.className = 'bookmark-category';
-                    const categoryTitle = document.createElement('h3');
-                    categoryTitle.className = 'category-title';
-                    categoryTitle.textContent = category.name;
-                    categoryDiv.appendChild(categoryTitle);
-                    if (category.sites && category.sites.length > 0) {
-                        const siteList = document.createElement('ul');
-                        siteList.className = 'bookmark-list';
-                        category.sites.forEach(site => {
-                            const listItem = document.createElement('li');
-                            const link = document.createElement('a');
-                            link.href = site.url;
-                            link.target = '_blank'; 
-                            link.title = site.name + " - " + site.url;
-                            
-                            try {
-                                const siteUrl = new URL(site.url); 
-                                const domain = siteUrl.hostname.replace(/^www\./, '');
-                                // 使用 Yandex Favicon 服务
-                                const faviconUrl = `https://favicon.yandex.net/favicon/v2/${domain}?size=32&stub=1`;
-                                
-                                const faviconImg = document.createElement('img');
-                                faviconImg.src = faviconUrl;
-                                faviconImg.alt = ""; 
-                                faviconImg.className = 'bookmark-favicon';
-                                faviconImg.onerror = function() { 
-                                    this.style.display = 'none'; 
-                                };
-                                link.appendChild(faviconImg);
-                            } catch (e) { 
-                                console.warn("处理书签URL或创建图标时出错:", site.url, e); 
-                            }
-                            const siteNameSpan = document.createElement('span');
-                            siteNameSpan.textContent = site.name;
-                            link.appendChild(siteNameSpan);
-                            listItem.appendChild(link);
-                            siteList.appendChild(listItem);
-                        });
-                        categoryDiv.appendChild(siteList);
-                    } else {
-                        const noSitesMessage = document.createElement('p');
-                        noSitesMessage.textContent = '此分类下暂无书签。';
-                        noSitesMessage.style.fontSize = '0.9em';
-                        noSitesMessage.style.color = '#888';
-                        noSitesMessage.style.textAlign = 'center';
-                        noSitesMessage.style.padding = '10px 0';
-                        categoryDiv.appendChild(noSitesMessage);
-                    }
-                    bookmarksContainer.appendChild(categoryDiv);
-                });
-            }
-            
-            searchInput.focus();
-            renderBookmarks(bookmarkCategoriesData);
-        });
-    </script>
+        const { error } = await supabase.auth.signInWithPassword({ email: userEmail, password: userPassword });
+        if (error) {
+          button.disabled = false;
+          button.textContent = "登录";
+          show("登录失败，请检查邮箱、密码或账号状态。", "error");
+          return;
+        }
+        show("验证成功，正在进入工作台…", "success");
+        location.replace("./dashboard.html");
+      });
+    }
+  </script>
 </body>
 </html>
