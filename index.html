@@ -137,7 +137,8 @@
         if (error) {
           button.disabled = false;
           button.textContent = "登录";
-          show("登录失败，请检查邮箱、密码或账号状态。", "error");
+          const detail = error.message || error.code || "未知认证错误";
+          show(`登录失败：${detail}`, "error");
           return;
         }
         show("验证成功，正在进入工作台…", "success");
