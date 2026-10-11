@@ -1,0 +1,1528 @@
+[
+  {
+    "id": "C1",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "下列读音正确的一项是：",
+    "options": [
+      "勉强 qiáng",
+      "倔强 qiàng",
+      "强迫 qiǎng",
+      "强大 qiǎng"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "强迫、勉强读qiǎng；倔强读jiàng；强大读qiáng。",
+    "correct": 2
+  },
+  {
+    "id": "C2",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "下列词语没有错别字的一项是：",
+    "options": [
+      "深遂",
+      "再接再厉",
+      "一愁莫展",
+      "谈笑风声"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "深邃、一筹莫展、谈笑风生是正确字形。“再接再厉”中的“厉”不能改成“励”。",
+    "correct": 1
+  },
+  {
+    "id": "C3",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "“他严格____操作规范，始终____安全底线。”填入最恰当的一组是：",
+    "options": [
+      "遵守／坚守",
+      "观察／坚持",
+      "坚守／遵守",
+      "遵循／观察"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "“遵守规范”“坚守底线”搭配最恰当；不是把规范当成仅供观察的对象。",
+    "correct": 0
+  },
+  {
+    "id": "C4",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "下列句子中成语使用不恰当的一项是：",
+    "options": [
+      "这两支球队旗鼓相当。",
+      "他主动带领大家打扫卫生，真是首当其冲。",
+      "画中的小猫栩栩如生。",
+      "他的文章别具一格。"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "首当其冲指最先受到攻击或遭受灾难，不能用来表扬主动带头打扫。",
+    "correct": 1
+  },
+  {
+    "id": "C5",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "下列句子没有语病的一项是：",
+    "options": [
+      "通过这次培训，使我掌握了测量方法。",
+      "这次培训提高了我们记录数据的准确率。",
+      "这次培训提高了我们的工作习惯。",
+      "我们听取并讨论了师傅的目光。"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "A缺少主语，可删“通过”或“使”；C“提高工作习惯”搭配不当，应改“改善工作习惯”；D“听取目光”搭配错误。",
+    "correct": 1
+  },
+  {
+    "id": "C6",
+    "subject": "语文",
+    "section": "语文练习①",
+    "prompt": "将①“及时记录异常情况”②“先按规范测量”③“再进行复核”填入“完成一次检测，应该____，____，____”，最合理的顺序是：",
+    "options": [
+      "①②③",
+      "③②①",
+      "②①③",
+      "①③②"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "先测量，发现异常及时记录，再复核，顺序为②①③。",
+    "correct": 2
+  },
+  {
+    "id": "C7",
+    "subject": "语文",
+    "section": "语文练习②",
+    "prompt": "根据原文，可直接确认的是：",
+    "options": [
+      "提醒一定是唯一原因",
+      "两层当月用水量都减少",
+      "第二种提醒一定最好",
+      "两层员工人数完全相同"
+    ],
+    "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
+    "reference": "B",
+    "explanation": "原文明确两层当月用水量都减少，未确认唯一原因或最佳提醒。",
+    "correct": 1
+  },
+  {
+    "id": "C8",
+    "subject": "语文",
+    "section": "语文练习②",
+    "prompt": "研究者没有立即判断哪种提醒更有效，主要因为：",
+    "options": [
+      "不愿意整理数据",
+      "两种提醒内容完全一样",
+      "提醒对任何人都无用",
+      "实际使用人数等条件存在差异"
+    ],
+    "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
+    "reference": "D",
+    "explanation": "外出办公、使用人数不同等条件，会影响比较，不能急于下结论。",
+    "correct": 3
+  },
+  {
+    "id": "C9",
+    "subject": "语文",
+    "section": "语文练习②",
+    "prompt": "统计“人均用水量”最直接的作用是：",
+    "options": [
+      "把使用人数的差异纳入比较",
+      "保证天气完全相同",
+      "证明提醒必然有效",
+      "使观察时间不再重要"
+    ],
+    "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
+    "reference": "A",
+    "explanation": "人均用水量把人数因素纳入统计，不能自动控制天气或证明因果。",
+    "correct": 0
+  },
+  {
+    "id": "C10",
+    "subject": "语文",
+    "section": "语文练习②",
+    "prompt": "最符合文意的一项是：",
+    "options": [
+      "只要用水减少，就能确定唯一原因",
+      "一次观察可以替代长期研究",
+      "结论应结合统计范围与影响条件",
+      "设备维修不会影响用水量"
+    ],
+    "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
+    "reference": "C",
+    "explanation": "原文强调统计范围与变化条件；一次观察不能替代充分证据。",
+    "correct": 2
+  },
+  {
+    "id": "C11",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "“哄骗、起哄、哄堂大笑”中“哄”的读音依次为：",
+    "options": [
+      "hōng／hǒng／hòng",
+      "hǒng／hòng／hōng",
+      "hòng／hōng／hǒng",
+      "全部读hōng"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "哄骗hǒng、起哄hòng、哄堂大笑hōng。",
+    "correct": 1
+  },
+  {
+    "id": "C12",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "下列词语没有错别字的一项是：",
+    "options": [
+      "迫不急待",
+      "焕然一新",
+      "言简意骇",
+      "天翻地复"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "正确写法还有迫不及待、言简意赅、天翻地覆。",
+    "correct": 1
+  },
+  {
+    "id": "C13",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "“天气突然转凉，____他仍按计划去参加培训。”最恰当的是：",
+    "options": [
+      "因此",
+      "因为",
+      "所以",
+      "但"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "“天气转凉”与“仍按计划”形成转折，应用“但”。",
+    "correct": 3
+  },
+  {
+    "id": "C14",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "下列成语使用不恰当的一项是：",
+    "options": [
+      "一些旧观念根深蒂固。",
+      "雕塑人物的神态栩栩如生。",
+      "为了检查记录，他走马观花地逐项仔细地核对了全部数据。",
+      "两支队伍的实力旗鼓相当。"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "走马观花形容粗略观察，与“逐项仔细地核对”矛盾。",
+    "correct": 2
+  },
+  {
+    "id": "C15",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "下列句子有语病的一项是：",
+    "options": [
+      "为了防止不再出现漏检，我们增加了复核步骤。",
+      "我们按规范完成了检查。",
+      "老师耐心回答了我的问题。",
+      "数据记录清楚，便于复核。"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "“防止不再出现”否定不当。可改“防止出现漏检”，或“确保不再出现漏检”。",
+    "correct": 0
+  },
+  {
+    "id": "C16",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "“先发现问题，再分析原因，____制定改进措施。”最恰当的是：",
+    "options": [
+      "虽然",
+      "然而",
+      "最后",
+      "否则"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "发现、分析、制定措施是先后步骤，“最后”衔接最合适。",
+    "correct": 2
+  },
+  {
+    "id": "C17",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "下列修辞判断正确的一项是：",
+    "options": [
+      "“车间醒来了”运用了拟人。",
+      "“他是工人”运用了比喻。",
+      "“今天比昨天暖和”运用了夸张。",
+      "“我喜欢阅读”运用了反问。"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "把车间写成能“醒来”的人，属于拟人；“他是工人”只是身份判断。",
+    "correct": 0
+  },
+  {
+    "id": "C18",
+    "subject": "语文",
+    "section": "语文练习③",
+    "prompt": "下列句子表达清楚、没有语病的一项是：",
+    "options": [
+      "大家对提高质量的建议很重视。",
+      "我们改善了产品合格率。",
+      "我们发现并解决了问题的出现。",
+      "工人和仪器都认真学习了规范。"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "B“改善合格率”搭配不当，可改“提高”；C“解决问题的出现”搭配不当；D仪器不能学习规范。",
+    "correct": 0
+  },
+  {
+    "id": "C19",
+    "subject": "语文",
+    "section": "语文练习④",
+    "prompt": "小林前后发生了怎样的变化？请结合具体行为回答。",
+    "options": [],
+    "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
+    "reference": "从求快、想把数值改成一致，变为核对后如实记录。",
+    "explanation": "依据：开始觉得步骤催促自己；后来遇到异常先核对，再如实写下。答案应把前后两方面都写出。",
+    "correct": null
+  },
+  {
+    "id": "C20",
+    "subject": "语文",
+    "section": "语文练习④",
+    "prompt": "师傅有哪些特点？写两点，每点给出文本依据。",
+    "options": [],
+    "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
+    "reference": "严谨负责；善于引导年轻人。",
+    "explanation": "记录更正写明原因、复核人，体现严谨；让小林按规范复测并说明记录的意义，体现耐心引导。",
+    "correct": null
+  },
+  {
+    "id": "C21",
+    "subject": "语文",
+    "section": "语文练习④",
+    "prompt": "“那支短短的笔，像一把尺”用了什么修辞？有什么表达作用？",
+    "options": [],
+    "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
+    "reference": "比喻。",
+    "explanation": "把笔比作尺，写出记录能衡量事实与责任的意义，突出如实记录的重要性，表达小林认识的变化。",
+    "correct": null
+  },
+  {
+    "id": "C22",
+    "subject": "语文",
+    "section": "语文练习④",
+    "prompt": "为什么小林后来觉得记录册中的“更正不再难看”？",
+    "options": [],
+    "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
+    "reference": "更正体现真实、复核与责任，而非仅仅使页面不好看。",
+    "explanation": "他理解记录会成为他人判断的依据，因此更重视可靠性；原文支持的核心是观念转变。",
+    "correct": null
+  },
+  {
+    "id": "C23",
+    "subject": "语文",
+    "section": "语文练习⑤",
+    "prompt": "解释“善制器”中的“善”、“既成”中的“既”。",
+    "options": [],
+    "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
+    "reference": "善：擅长；既：已经。",
+    "explanation": "“善制器”是擅长制作器具；“既成”指已经做成。",
+    "correct": null
+  },
+  {
+    "id": "C24",
+    "subject": "语文",
+    "section": "语文练习⑤",
+    "prompt": "把“学而不习，犹有尺而不用也”翻译成现代汉语。",
+    "options": [],
+    "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
+    "reference": "学习却不练习，就像有尺子却不使用一样。",
+    "explanation": "保留“不”的否定；而在此连接转折；犹可译为“如同、好像”。",
+    "correct": null
+  },
+  {
+    "id": "C25",
+    "subject": "语文",
+    "section": "语文练习⑤",
+    "prompt": "年轻人起初和后来对学习的态度有何不同？",
+    "options": [],
+    "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
+    "reference": "起初觉得容易；实践失败后虚心请教、每天练习，做成后也不自满。",
+    "explanation": "把“初以为易”“乃问”“日习”“不敢自满”组织成前后对比。",
+    "correct": null
+  },
+  {
+    "id": "C26",
+    "subject": "语文",
+    "section": "语文练习⑤",
+    "prompt": "“抱膝灯前影伴身”呈现怎样的处境？表达什么情感？",
+    "options": [],
+    "passage": "邯郸驿里逢冬至，抱膝灯前影伴身。\n想得家中夜深坐，还应说着远行人。",
+    "reference": "独自在旅馆灯前抱膝而坐，只有影子相伴；表达孤独与思乡。",
+    "explanation": "冬至、驿馆、抱膝和影伴身共同构成证据。",
+    "correct": null
+  },
+  {
+    "id": "C27",
+    "subject": "语文",
+    "section": "语文练习⑤",
+    "prompt": "后两句从谁的角度设想？怎样表达诗人的感情？",
+    "options": [],
+    "passage": "邯郸驿里逢冬至，抱膝灯前影伴身。\n想得家中夜深坐，还应说着远行人。",
+    "reference": "从家人的角度想象他们谈论远行的自己。",
+    "explanation": "写想象中的“家人思我”，表达自己的“我思家”，属于虚写，使思念更具体。",
+    "correct": null
+  },
+  {
+    "id": "M1",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "A={1,2,3}，B={2,4}，A∩B是：",
+    "options": [
+      "{1,2,3,4}",
+      "{2}",
+      "{1,3}",
+      "{4}"
+    ],
+    "passage": "",
+    "reference": "B，{2}",
+    "explanation": "交集找共同元素，只有2。",
+    "correct": 1
+  },
+  {
+    "id": "M2",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "A={1,3}，B={3,5}，A∪B是：",
+    "options": [
+      "{3}",
+      "{1,5}",
+      "{1,3,5}",
+      "{1,3,4,5}"
+    ],
+    "passage": "",
+    "reference": "C，{1,3,5}",
+    "explanation": "并集合并全部元素，再去掉重复的3。修订后D多了元素4，明确不等于正确集合。",
+    "correct": 2
+  },
+  {
+    "id": "M3",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "1/2＋1/3等于：",
+    "options": [
+      "2/5",
+      "1/6",
+      "2/3",
+      "5/6"
+    ],
+    "passage": "",
+    "reference": "D，5/6",
+    "explanation": "通分成3/6＋2/6=5/6。不能分子相加、分母也相加。",
+    "correct": 3
+  },
+  {
+    "id": "M4",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "3x＋2=11，x等于：",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "9"
+    ],
+    "passage": "",
+    "reference": "A，3",
+    "explanation": "3x=11−2=9，再除以3。",
+    "correct": 0
+  },
+  {
+    "id": "M5",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "不等式−2x＞6的解是：",
+    "options": [
+      "x＞−3",
+      "x＞3",
+      "x＜−3",
+      "x＜3"
+    ],
+    "passage": "",
+    "reference": "C，x＜−3",
+    "explanation": "两边除以−2，不等号反向。",
+    "correct": 2
+  },
+  {
+    "id": "M6",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "方程x²−5x＋6=0的根是：",
+    "options": [
+      "1和6",
+      "2和3",
+      "−2和−3",
+      "−1和−6"
+    ],
+    "passage": "",
+    "reference": "B，2和3",
+    "explanation": "(x−2)(x−3)=0，两项分别取0。",
+    "correct": 1
+  },
+  {
+    "id": "M7",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "f(x)=2x²−1，则f(2)=：",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "passage": "",
+    "reference": "C，7",
+    "explanation": "f(2)=2×2²−1=8−1=7。",
+    "correct": 2
+  },
+  {
+    "id": "M8",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "y=−(x−2)²＋5的值域是：",
+    "options": [
+      "[5,+∞)",
+      "(−∞,5]",
+      "[2,+∞)",
+      "全体实数"
+    ],
+    "passage": "",
+    "reference": "B，(−∞,5]",
+    "explanation": "平方项≥0，前面是负号，所以y≤5，且x=2时取到5。",
+    "correct": 1
+  },
+  {
+    "id": "M9",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "f(x)=√(x−3)的定义域是：",
+    "options": [
+      "x≤3",
+      "x≠3",
+      "全体实数",
+      "x≥3"
+    ],
+    "passage": "",
+    "reference": "D，x≥3",
+    "explanation": "根号内x−3≥0。x=3时可以取值0。",
+    "correct": 3
+  },
+  {
+    "id": "M10",
+    "subject": "数学",
+    "section": "数学练习①",
+    "prompt": "log₂8等于：",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "6"
+    ],
+    "passage": "",
+    "reference": "A，3",
+    "explanation": "2³=8，所以log₂8=3。",
+    "correct": 0
+  },
+  {
+    "id": "M11",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "2³×2²等于：",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "12"
+    ],
+    "passage": "",
+    "reference": "B，32",
+    "explanation": "同底数相乘指数相加：2⁽³⁺²⁾=2⁵=32。",
+    "correct": 1
+  },
+  {
+    "id": "M12",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "在x＞0时，下列函数递增的是：",
+    "options": [
+      "y=2x",
+      "y=−3x",
+      "y=1/x",
+      "y=log₀.₅x"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "y=2x的斜率为正；其余三项在x＞0范围内递减。",
+    "correct": 0
+  },
+  {
+    "id": "M13",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "等差数列a₁=3，d=2，则a₅=：",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "13"
+    ],
+    "passage": "",
+    "reference": "C，11",
+    "explanation": "a₅=3＋(5−1)×2=11。",
+    "correct": 2
+  },
+  {
+    "id": "M14",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "1＋2＋…＋10等于：",
+    "options": [
+      "45",
+      "50",
+      "60",
+      "55"
+    ],
+    "passage": "",
+    "reference": "D，55",
+    "explanation": "S₁₀=10×(1＋10)/2=55。",
+    "correct": 3
+  },
+  {
+    "id": "M15",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "等比数列a₁=2，q=3，则a₄=：",
+    "options": [
+      "18",
+      "54",
+      "24",
+      "162"
+    ],
+    "passage": "",
+    "reference": "B，54",
+    "explanation": "a₄=2×3⁽⁴⁻¹⁾=2×27=54。",
+    "correct": 1
+  },
+  {
+    "id": "M16",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "sin30°等于：",
+    "options": [
+      "1/2",
+      "√2/2",
+      "√3/2",
+      "1"
+    ],
+    "passage": "",
+    "reference": "A，1/2",
+    "explanation": "直接记特殊角值，也可由30°直角三角形理解。",
+    "correct": 0
+  },
+  {
+    "id": "M17",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "cos60°＋sin30°等于：",
+    "options": [
+      "0",
+      "1/2",
+      "1",
+      "√3"
+    ],
+    "passage": "",
+    "reference": "C，1",
+    "explanation": "cos60°=1/2，sin30°=1/2，相加为1。",
+    "correct": 2
+  },
+  {
+    "id": "M18",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "tan45°等于：",
+    "options": [
+      "0",
+      "1/2",
+      "√3",
+      "1"
+    ],
+    "passage": "",
+    "reference": "D，1",
+    "explanation": "tan45°=1。",
+    "correct": 3
+  },
+  {
+    "id": "M19",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "经过(1,2)、(3,6)的直线斜率是：",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "passage": "",
+    "reference": "B，2",
+    "explanation": "k=(6−2)/(3−1)=4/2=2。分子是纵坐标之差。",
+    "correct": 1
+  },
+  {
+    "id": "M20",
+    "subject": "数学",
+    "section": "数学练习②",
+    "prompt": "下列哪个点在直线y=2x−1上？",
+    "options": [
+      "(2,3)",
+      "(2,4)",
+      "(1,2)",
+      "(0,1)"
+    ],
+    "passage": "",
+    "reference": "A，(2,3)",
+    "explanation": "把x=2代入，y=2×2−1=3。",
+    "correct": 0
+  },
+  {
+    "id": "M21",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "点(0,0)到(3,4)的距离是：",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "passage": "",
+    "reference": "C，5",
+    "explanation": "距离=√(3²＋4²)=√25=5。",
+    "correct": 2
+  },
+  {
+    "id": "M22",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "圆x²＋y²=9的半径是：",
+    "options": [
+      "9",
+      "6",
+      "√9/2",
+      "3"
+    ],
+    "passage": "",
+    "reference": "D，3",
+    "explanation": "r²=9，所以非负半径r=3，不是9。",
+    "correct": 3
+  },
+  {
+    "id": "M23",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "向量(2,3)＋(1,−2)等于：",
+    "options": [
+      "(1,5)",
+      "(3,1)",
+      "(3,5)",
+      "(1,1)"
+    ],
+    "passage": "",
+    "reference": "B，(3,1)",
+    "explanation": "横坐标2＋1=3；纵坐标3＋(−2)=1。",
+    "correct": 1
+  },
+  {
+    "id": "M24",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "向量(2,1)与(1,−2)的数量积是：",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "passage": "",
+    "reference": "A，0",
+    "explanation": "数量积=2×1＋1×(−2)=0。",
+    "correct": 0
+  },
+  {
+    "id": "M25",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "8、10、12、18的平均数是：",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "passage": "",
+    "reference": "C，12",
+    "explanation": "(8＋10＋12＋18)/4=48/4=12。",
+    "correct": 2
+  },
+  {
+    "id": "M26",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "袋中有3个红球、2个黑球，随机取1个，红球的概率是：",
+    "options": [
+      "1/5",
+      "2/5",
+      "1/2",
+      "3/5"
+    ],
+    "passage": "",
+    "reference": "D，3/5",
+    "explanation": "符合条件的3个红球，占总数5个。",
+    "correct": 3
+  },
+  {
+    "id": "M27",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "6件产品中4件正品，依次随机不放回取2件，两件都是正品的概率是：",
+    "options": [
+      "4/9",
+      "2/5",
+      "3/5",
+      "2/3"
+    ],
+    "passage": "",
+    "reference": "B，2/5",
+    "explanation": "第一件正品概率4/6；第一件已为正品后，第二件正品概率3/5；相乘12/30=2/5。",
+    "correct": 1
+  },
+  {
+    "id": "M28",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "数据2、4、7、8、9的中位数是：",
+    "options": [
+      "7",
+      "6",
+      "4",
+      "8"
+    ],
+    "passage": "",
+    "reference": "A，7",
+    "explanation": "5个数已经排序，中间第3个是7。",
+    "correct": 0
+  },
+  {
+    "id": "M29",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "等差数列a₁=4，d=3，前6项和S₆=：",
+    "options": [
+      "54",
+      "60",
+      "69",
+      "72"
+    ],
+    "passage": "",
+    "reference": "C，69",
+    "explanation": "a₆=4＋5×3=19；S₆=6×(4＋19)/2=69。",
+    "correct": 2
+  },
+  {
+    "id": "M30",
+    "subject": "数学",
+    "section": "数学练习③",
+    "prompt": "直线y=−x＋4与x轴的交点是：",
+    "options": [
+      "(0,4)",
+      "(−4,0)",
+      "(4,4)",
+      "(4,0)"
+    ],
+    "passage": "",
+    "reference": "D，(4,0)",
+    "explanation": "在x轴上y=0，0=−x＋4，所以x=4。",
+    "correct": 3
+  },
+  {
+    "id": "E1",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "He ____ my friend.",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "He配is，They配are。",
+    "correct": 1
+  },
+  {
+    "id": "E2",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "They ____ in the same class.",
+    "options": [
+      "is",
+      "am",
+      "are",
+      "be"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "He配is，They配are。",
+    "correct": 2
+  },
+  {
+    "id": "E3",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "She ____ to work every day.",
+    "options": [
+      "go",
+      "going",
+      "went",
+      "goes"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
+    "correct": 3
+  },
+  {
+    "id": "E4",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "We ____ football yesterday.",
+    "options": [
+      "played",
+      "play",
+      "will play",
+      "playing"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
+    "correct": 0
+  },
+  {
+    "id": "E5",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "I ____ my grandmother next Sunday.",
+    "options": [
+      "visited",
+      "visit",
+      "will visit",
+      "have visited"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
+    "correct": 2
+  },
+  {
+    "id": "E6",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "He ____ here since 2019.",
+    "options": [
+      "work",
+      "has worked",
+      "worked",
+      "working"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "since 2019表示从过去到现在的起点，这里用has worked。",
+    "correct": 1
+  },
+  {
+    "id": "E7",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "This is ____ interesting book.",
+    "options": [
+      "an",
+      "a",
+      "at",
+      "on"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "interesting开头为元音音素，用an；具体星期用on。",
+    "correct": 0
+  },
+  {
+    "id": "E8",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "The class starts ____ Monday.",
+    "options": [
+      "in",
+      "at",
+      "to",
+      "on"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "interesting开头为元音音素，用an；具体星期用on。",
+    "correct": 3
+  },
+  {
+    "id": "E9",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "Please listen ____ the teacher.",
+    "options": [
+      "for",
+      "at",
+      "to",
+      "on"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "固定搭配listen to、be interested in。",
+    "correct": 2
+  },
+  {
+    "id": "E10",
+    "subject": "英语",
+    "section": "英语练习①",
+    "prompt": "I am interested ____ English.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "固定搭配listen to、be interested in。",
+    "correct": 1
+  },
+  {
+    "id": "E11",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "She enjoys ____ books.",
+    "options": [
+      "reading",
+      "read",
+      "to read",
+      "reads"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
+    "correct": 0
+  },
+  {
+    "id": "E12",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "I want ____ a new skill.",
+    "options": [
+      "learn",
+      "learning",
+      "learned",
+      "to learn"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
+    "correct": 3
+  },
+  {
+    "id": "E13",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "You must ____ the rules.",
+    "options": [
+      "following",
+      "to follow",
+      "follow",
+      "followed"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
+    "correct": 2
+  },
+  {
+    "id": "E14",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "The room ____ yesterday.",
+    "options": [
+      "cleans",
+      "was cleaned",
+      "will clean",
+      "is cleaning"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "房间是被打扫的，yesterday是过去：was cleaned。",
+    "correct": 1
+  },
+  {
+    "id": "E15",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "This tool is ____ useful than that one.",
+    "options": [
+      "more",
+      "most",
+      "much",
+      "many"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "useful的比较级为more useful，与than配合。",
+    "correct": 0
+  },
+  {
+    "id": "E16",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "He stayed home ____ he was ill.",
+    "options": [
+      "but",
+      "or",
+      "if",
+      "because"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "“生病”是“待在家”的原因，用because。",
+    "correct": 3
+  },
+  {
+    "id": "E17",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "If it ____ tomorrow, we will stay at home.",
+    "options": [
+      "rained",
+      "will rain",
+      "rains",
+      "raining"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "真实条件句主句用will，if从句表达将来条件时用一般现在时：rains。",
+    "correct": 2
+  },
+  {
+    "id": "E18",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "This is the place ____ I study English.",
+    "options": [
+      "when",
+      "where",
+      "why",
+      "who"
+    ],
+    "passage": "",
+    "reference": "B",
+    "explanation": "place是地点，后面缺“在这个地方”的意思，用where。",
+    "correct": 1
+  },
+  {
+    "id": "E19",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "He is looking for ____ book.",
+    "options": [
+      "his",
+      "he",
+      "him",
+      "they"
+    ],
+    "passage": "",
+    "reference": "A",
+    "explanation": "book前需要“他的”his；many students是复数，there are。",
+    "correct": 0
+  },
+  {
+    "id": "E20",
+    "subject": "英语",
+    "section": "英语练习②",
+    "prompt": "There ____ many students in the classroom.",
+    "options": [
+      "am",
+      "is",
+      "be",
+      "are"
+    ],
+    "passage": "",
+    "reference": "D",
+    "explanation": "book前需要“他的”his；many students是复数，there are。",
+    "correct": 3
+  },
+  {
+    "id": "E21",
+    "subject": "英语",
+    "section": "英语练习③",
+    "prompt": "选出字母c的发音与其余三项不同的词。",
+    "options": [
+      "cake",
+      "cup",
+      "city",
+      "coat"
+    ],
+    "passage": "",
+    "reference": "C，city",
+    "explanation": "city中的c读/s/，其余三个中的c读/k/。",
+    "correct": 2
+  },
+  {
+    "id": "E22",
+    "subject": "英语",
+    "section": "英语练习③",
+    "prompt": "选出字母组合ea的发音与其余三项不同的词。",
+    "options": [
+      "head",
+      "team",
+      "bread",
+      "ready"
+    ],
+    "passage": "",
+    "reference": "B，team",
+    "explanation": "team中的ea读/iː/；head、bread、ready中的ea读/e/。",
+    "correct": 1
+  },
+  {
+    "id": "E23",
+    "subject": "英语",
+    "section": "英语练习③",
+    "prompt": "选出字母组合gh的发音与其余三项不同的词。",
+    "options": [
+      "though",
+      "laugh",
+      "cough",
+      "enough"
+    ],
+    "passage": "",
+    "reference": "A，though",
+    "explanation": "though的gh不发音，其余三个gh发/f/。",
+    "correct": 0
+  },
+  {
+    "id": "E24",
+    "subject": "英语",
+    "section": "英语练习③",
+    "prompt": "选出字母b的发音与其余三项不同的词。",
+    "options": [
+      "job",
+      "book",
+      "big",
+      "climb"
+    ],
+    "passage": "",
+    "reference": "D，climb",
+    "explanation": "climb中的b不发音，其余三个发/b/。",
+    "correct": 3
+  },
+  {
+    "id": "E25",
+    "subject": "英语",
+    "section": "英语练习③",
+    "prompt": "“huge”最接近下面哪个意思？",
+    "options": [
+      "very small",
+      "very old",
+      "very large",
+      "very early"
+    ],
+    "passage": "",
+    "reference": "C",
+    "explanation": "huge表示巨大，接近very large。",
+    "correct": 2
+  },
+  {
+    "id": "E26",
+    "subject": "英语",
+    "section": "英语练习④",
+    "prompt": "Where does Lin work?",
+    "options": [
+      "In a factory.",
+      "In a bank.",
+      "In a hospital.",
+      "In a museum."
+    ],
+    "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
+    "reference": "A",
+    "explanation": "第一句明确a small factory。",
+    "correct": 0
+  },
+  {
+    "id": "E27",
+    "subject": "英语",
+    "section": "英语练习④",
+    "prompt": "What should Lin do before handing in a form?",
+    "options": [
+      "Write a long story.",
+      "Leave the numbers blank.",
+      "Check the numbers.",
+      "Ask for a holiday."
+    ],
+    "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
+    "reference": "C",
+    "explanation": "check the numbers before handing in each form是直接依据。",
+    "correct": 2
+  },
+  {
+    "id": "E28",
+    "subject": "英语",
+    "section": "英语练习④",
+    "prompt": "How long did he study English each weekday?",
+    "options": [
+      "Ten minutes.",
+      "Twenty minutes.",
+      "One hour.",
+      "Two hours."
+    ],
+    "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
+    "reference": "B",
+    "explanation": "twenty minutes，且from Monday to Friday对应每个工作日。",
+    "correct": 1
+  },
+  {
+    "id": "E29",
+    "subject": "英语",
+    "section": "英语练习④",
+    "prompt": "Why did he learn English?",
+    "options": [
+      "To become a singer.",
+      "To buy a factory.",
+      "To stop working.",
+      "To read simple instructions."
+    ],
+    "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
+    "reference": "D",
+    "explanation": "He wanted to read simple instructions…说明学习目的。",
+    "correct": 3
+  },
+  {
+    "id": "E30",
+    "subject": "英语",
+    "section": "英语练习④",
+    "prompt": "What is the main lesson of the passage?",
+    "options": [
+      "Regular action helps us improve.",
+      "Never ask questions.",
+      "A plan is enough by itself.",
+      "Mistakes should be hidden."
+    ],
+    "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
+    "reference": "A",
+    "explanation": "全文围绕小而规律的行动带来进步，最后一句给出总结。",
+    "correct": 0
+  },
+  {
+    "id": "E31",
+    "subject": "英语",
+    "section": "英语练习⑤",
+    "prompt": "选择最适合本空的一项。",
+    "options": [
+      "so",
+      "but",
+      "or",
+      "because"
+    ],
+    "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
+    "reference": "B",
+    "explanation": "忙碌与仍然学习构成转折，用but。",
+    "correct": 1
+  },
+  {
+    "id": "E32",
+    "subject": "英语",
+    "section": "英语练习⑤",
+    "prompt": "选择最适合本空的一项。",
+    "options": [
+      "read",
+      "reads",
+      "to read",
+      "reading"
+    ],
+    "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
+    "reference": "D",
+    "explanation": "enjoy后接动词-ing形式，reading。",
+    "correct": 3
+  },
+  {
+    "id": "E33",
+    "subject": "英语",
+    "section": "英语练习⑤",
+    "prompt": "选择最适合本空的一项。",
+    "options": [
+      "in",
+      "at",
+      "to",
+      "from"
+    ],
+    "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
+    "reference": "A",
+    "explanation": "写在笔记本里，用in her notebook。",
+    "correct": 0
+  },
+  {
+    "id": "E34",
+    "subject": "英语",
+    "section": "英语练习⑤",
+    "prompt": "选择最适合本空的一项。",
+    "options": [
+      "help",
+      "helping",
+      "helped",
+      "helps"
+    ],
+    "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
+    "reference": "C",
+    "explanation": "叙述过去几周的变化，practice helped her improve；help sb (to) do。",
+    "correct": 2
+  },
+  {
+    "id": "E35",
+    "subject": "英语",
+    "section": "英语练习⑤",
+    "prompt": "选择最适合本空的一项。",
+    "options": [
+      "wrote",
+      "will write",
+      "writes",
+      "writing"
+    ],
+    "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
+    "reference": "B",
+    "explanation": "Next week提示将来，will write。",
+    "correct": 1
+  },
+  {
+    "id": "E36",
+    "subject": "英语",
+    "section": "补全对话",
+    "prompt": "为第E36空选择恰当的回应。",
+    "options": [
+      "At nine in the morning.",
+      "A notebook.",
+      "At the school gate.",
+      "Yes, I went there last year.",
+      "Because I was tired."
+    ],
+    "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
+    "reference": "A",
+    "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
+    "correct": 0
+  },
+  {
+    "id": "E37",
+    "subject": "英语",
+    "section": "补全对话",
+    "prompt": "为第E37空选择恰当的回应。",
+    "options": [
+      "At nine in the morning.",
+      "A notebook.",
+      "At the school gate.",
+      "Yes, I went there last year.",
+      "Because I was tired."
+    ],
+    "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
+    "reference": "C",
+    "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
+    "correct": 2
+  },
+  {
+    "id": "E38",
+    "subject": "英语",
+    "section": "补全对话",
+    "prompt": "为第E38空选择恰当的回应。",
+    "options": [
+      "At nine in the morning.",
+      "A notebook.",
+      "At the school gate.",
+      "Yes, I went there last year.",
+      "Because I was tired."
+    ],
+    "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
+    "reference": "B",
+    "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
+    "correct": 1
+  },
+  {
+    "id": "CW1",
+    "subject": "语文",
+    "section": "写作训练",
+    "prompt": "有人觉得平凡的工作不值得认真对待；有人认为把每一件小事做好，就是对他人负责。围绕“认真与责任”自拟题目，写650—750字，文体自选，诗歌除外。",
+    "title": "认真与责任",
+    "options": [],
+    "passage": "",
+    "correct": null,
+    "reference": "中心回答题目；事例写清问题、行动、结果；分析认真如何体现责任；检查标题、分段、字数与错别字。",
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+  },
+  {
+    "id": "CW2",
+    "subject": "语文",
+    "section": "写作训练",
+    "prompt": "掌握一项技能，既需要学习方法，也需要反复实践。有人一直搜集资料却迟迟不开始，有人边做边学、不断改正。围绕“学习与行动”自拟题目，写650—750字。",
+    "title": "学习与行动",
+    "options": [],
+    "passage": "",
+    "correct": null,
+    "reference": "论述学习方法与实际行动的关系；写出具体事例和分析；不能只有口号；检查结构与表达。",
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+  },
+  {
+    "id": "EW1",
+    "subject": "英语",
+    "section": "写作训练",
+    "prompt": "邀请Tom下周日参观城市博物馆。说明9点在博物馆门口见面，介绍看城市照片展的安排，并提醒带笔记本。写80—100词，署名Li Hua。",
+    "title": "邀请邮件",
+    "options": [],
+    "passage": "",
+    "correct": null,
+    "reference": "覆盖邀请目的、日期、时间地点、照片展和笔记本；邮件格式正确，句子准确，字数符合要求。",
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+  },
+  {
+    "id": "EW2",
+    "subject": "英语",
+    "section": "写作训练",
+    "prompt": "你想参加周末英语班，给Brown老师写邮件。说明你工作日上班、想提高阅读和写作；询问上课时间地点、费用与需要带的东西。写80—100词，署名Li Hua。",
+    "title": "咨询邮件",
+    "options": [],
+    "passage": "",
+    "correct": null,
+    "reference": "说明周末学习原因与目标；问清时间地点、费用和用品；使用礼貌问句；邮件格式与字数正确。",
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+  }
+]

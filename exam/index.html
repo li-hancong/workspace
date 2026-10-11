@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#11655d"><title>成考练习室 · 答题与批阅</title><meta name="description" content="语文、数学、英语基础练习，保存进度、交卷评分、导出答卷给老师批阅。"><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><a href="#" id="brand" class="brand"><span class="logo" aria-hidden="true">练</span><span>成考练习室<small>从基础开始，一题一题进步</small></span></a><span class="tag">高起专 · 三科训练</span></header>
+<main id="app"><div class="loading">正在准备题目…</div></main>
+<footer>原创基础练习 · 主观题由老师批阅 · 进度保存在当前浏览器</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="confirm"><form method="dialog"><h2 id="dialog-title"></h2><p id="dialog-message"></p><div class="actions"><button value="cancel" class="secondary">继续答题</button><button value="ok" class="primary" id="dialog-ok">确认交卷</button></div></form></dialog>
+<input type="file" id="import" accept="application/json,.json" hidden>
+<script type="module" src="app.mjs"></script></body></html>

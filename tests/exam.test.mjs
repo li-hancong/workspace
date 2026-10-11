@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {VERSION,answered,grade,exportText,validateAttempt} from '../exam/core.mjs';
+const bank=JSON.parse(fs.readFileSync('exam/bank.json','utf8'));
+assert.equal(bank.length,99);assert.equal(new Set(bank.map(q=>q.id)).size,99);
+assert.equal(bank.filter(q=>q.options.length).length,86);
+const all={version:VERSION,id:'TEST',title:'测试',name:'测试用户',ids:bank.map(q=>q.id),answers:Object.fromEntries(bank.map(q=>[q.id,q.options.length?q.correct:'我自己的回答\n第二段 <script>不应执行</script>'])),flags:[],index:0,startedAt:Date.now(),elapsed:123,limit:0,submittedAt:Date.now()};
+assert.deepEqual(grade(bank,all.answers),{objective:86,correct:86,wrong:0,blank:0,subjective:13,subjectiveAnswered:13,percent:100});
+assert.deepEqual(grade(bank,{}),{objective:86,correct:0,wrong:0,blank:86,subjective:13,subjectiveAnswered:0,percent:0});
+const choices=bank.filter(q=>q.options.length),wrong=Object.fromEntries(choices.map(q=>[q.id,(q.correct+1)%q.options.length]));assert.equal(grade(bank,wrong).wrong,86);
+assert.equal(grade(bank.filter(q=>!q.options.length),all.answers).percent,null);
+assert.equal(answered(bank[0],0),true);assert.equal(answered(bank[0],'0'),false);
+assert.deepEqual(validateAttempt(JSON.parse(JSON.stringify(all)),bank),all);
+assert.throws(()=>validateAttempt({...all,version:'wrong'},bank));assert.throws(()=>validateAttempt({...all,ids:['M1','M1']},bank));assert.throws(()=>validateAttempt({...all,ids:['UNKNOWN']},bank));assert.throws(()=>validateAttempt({...all,answers:{C1:99}},bank));
+const text=exportText(all,bank);for(const q of bank){assert(text.includes(q.id+'｜'));assert(text.includes(q.prompt));if(q.passage)assert(text.includes(q.passage));}assert(text.includes('我自己的回答\n第二段'));assert(text.includes('86/86'));assert(text.includes('待人工批阅'));assert(text.includes('不计入客观题分数'));
+const blankText=exportText({...all,answers:{},submittedAt:null},bank);assert(blankText.includes('草稿（未提交）'));assert(blankText.includes('【未作答】'));
+assert.equal(bank.find(q=>q.id==='M2').options[3],'{1,3,4,5}');
+console.log('PASS: 99 questions; scoring for correct/wrong/blank; subjective separation; complete export; JSON round-trip and invalid import rejection.');
