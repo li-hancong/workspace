@@ -104,11 +104,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
   .exam-head .exam-clock .time{font-size:20px;line-height:1.25;text-align:right}
   .exam-clock #home{grid-column:2;grid-row:1 / 3;min-width:72px;min-height:44px;padding:8px 6px;font-size:12px;white-space:nowrap}
   .exam-layout{gap:10px}
-  .aside{order:-1;padding:0 12px;border-radius:12px;box-shadow:none;scroll-margin-top:80px}
+  .aside{order:-1;padding:0 12px;border-radius:12px;box-shadow:none;scroll-margin-top:var(--exam-header-offset,80px)}
   .answer-panel>summary{min-height:44px;padding:10px 0;font-size:14px;line-height:1.6}
   .aside .help{margin:10px 0 14px}
   .aside .save-line{margin-top:12px}
-  .question{padding:16px;scroll-margin-top:80px}
+  .question{padding:16px;scroll-margin-top:var(--exam-header-offset,80px)}
   .q-top{align-items:center;gap:8px;margin-bottom:10px}
   .q-code{font-size:12px;letter-spacing:0;flex-basis:100px}
   .q-top button{min-height:44px;padding:8px 10px;font-size:12px}
