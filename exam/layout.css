@@ -132,11 +132,14 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
   body[data-view=exam]{--exam-navigation-gap:max(32px,env(safe-area-inset-bottom))}
 }
 
-/* Each math question has a learning view and a compact answer view. */
+/* Show the question first; math explanations are optional help. */
 .question [hidden]{display:none!important}
-.study-switch{display:flex;gap:4px;padding:4px;margin:0 0 20px;background:#f0f3ee;border:1px solid var(--line);border-radius:12px}
-.study-switch button{flex:1;min-width:0;min-height:44px;padding:10px 8px;background:transparent;color:#526864;font-size:14px;font-weight:600}
-.study-switch button[aria-pressed=true]{background:#fff;color:var(--accent);box-shadow:0 1px 5px #183b3914}
+.answer-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px}
+.lesson-open{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 12px;font-size:14px;white-space:nowrap}
+.help-dot{display:inline-grid;place-items:center;width:18px;height:18px;border:1px solid currentColor;border-radius:50%;font-size:12px;line-height:1;flex-shrink:0}
+.lesson-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px}
+.lesson-tools button{flex-shrink:0;min-height:44px;padding:8px 12px;font-size:14px}
+.lesson-tools .muted{font-size:12px;text-align:right}
 .lesson-intro{padding:18px;background:#edf4ed;border:1px solid #d4e3d6;border-radius:14px;margin:0 0 24px}
 .lesson-label{display:block;color:var(--accent);font-size:12px;font-weight:650;margin-bottom:6px}
 .lesson-intro h3{font-size:19px;line-height:1.6;margin:0 0 10px}
@@ -165,8 +168,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
 .lesson-diagram text{fill:var(--ink);font-family:inherit;font-size:15px}
 .lesson-diagram figcaption{text-align:center;font-size:12px;line-height:1.7;color:var(--muted);margin-top:6px}
 @media(max-width:600px){
- .study-switch{margin-bottom:16px}
- .study-switch button{font-size:14px;min-height:44px;white-space:nowrap}
  .lesson-intro{padding:14px;margin-bottom:20px}
  .lesson-intro h3{font-size:18px}
  .lesson-terms>div{grid-template-columns:minmax(76px,1fr) minmax(0,2.4fr);gap:12px}
@@ -175,7 +176,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
  .lesson-memory{padding-left:12px}
  .lesson-diagram{padding:8px}
  .question[data-math-stage=answer] .q-top{margin-bottom:8px}
- .question[data-math-stage=answer] .study-switch{padding:2px;margin-bottom:12px}
  .question[data-math-stage=answer] h2{margin-bottom:12px}
  .question[data-math-stage=answer] .options{gap:10px}
  .question[data-math-stage=answer] .option{min-height:48px;padding:10px 12px}
