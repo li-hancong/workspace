@@ -140,6 +140,24 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
 .lesson-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px}
 .lesson-tools button{flex-shrink:0;min-height:44px;padding:8px 12px;font-size:14px}
 .lesson-tools .muted{font-size:12px;text-align:right}
+.spelling-analysis{margin-top:20px}
+.spelling-analysis h3{font-size:16px;line-height:1.7;margin:0 0 12px}
+.spelling-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.spelling-item{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fafbf7}
+.spelling-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:12px}
+.spelling-outcome{padding:3px 8px;border-radius:8px;font-size:12px;font-weight:600;white-space:nowrap}
+.spelling-outcome.has-error{background:#fae9e1;color:#924b35}
+.spelling-outcome.is-correct{background:#e5f0e5;color:#276642}
+.spelling-comparison{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:8px}
+.spelling-comparison.single-word{grid-template-columns:minmax(0,1fr)}
+.spelling-word{min-width:0}
+.spelling-word small{display:block;font-size:11px;color:var(--muted);margin-bottom:4px}
+.spelling-word>div{font-size:22px;line-height:1.6;overflow-wrap:anywhere}
+.spelling-wrong,.spelling-right{padding:0 2px;border-radius:4px;font-weight:750;text-decoration:underline;text-underline-offset:4px}
+.spelling-wrong{color:#924b35;background:#fae9e1}
+.spelling-right{color:#276642;background:#e5f0e5}
+.spelling-arrow{font-size:18px;color:var(--muted)}
+.spelling-item p{margin:12px 0 0;font-size:14px;line-height:1.85;overflow-wrap:anywhere}
 .lesson-intro{padding:18px;background:#edf4ed;border:1px solid #d4e3d6;border-radius:14px;margin:0 0 24px}
 .lesson-label{display:block;color:var(--accent);font-size:12px;font-weight:650;margin-bottom:6px}
 .lesson-intro h3{font-size:19px;line-height:1.6;margin:0 0 10px}

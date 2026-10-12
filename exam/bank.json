@@ -29,9 +29,39 @@
     ],
     "passage": "",
     "reference": "B",
-    "explanation": "深邃、一筹莫展、谈笑风生是正确字形。“再接再厉”中的“厉”不能改成“励”。",
+    "explanation": "本题选 B。A：“深遂”应写为“深邃”，“遂”改为“邃”；B：“再接再厉”字形正确，末字用“厉”；C：“一愁莫展”应写为“一筹莫展”，“愁”改为“筹”；D：“谈笑风声”应写为“谈笑风生”，“声”改为“生”。",
     "correct": 1,
-    "cardType": "基础选择题"
+    "cardType": "基础选择题",
+    "optionAnalysis": [
+      {
+        "index": 0,
+        "correctWord": "深邃",
+        "wrongChar": "遂",
+        "rightChar": "邃",
+        "note": "“邃”的字形有穴字头，表示幽深、精深；“深邃”不能写成“深遂”。"
+      },
+      {
+        "index": 1,
+        "correctWord": "再接再厉",
+        "wrongChar": "",
+        "rightChar": "厉",
+        "note": "字形正确，表示继续努力。末字用“厉”，容易误写成“励”。"
+      },
+      {
+        "index": 2,
+        "correctWord": "一筹莫展",
+        "wrongChar": "愁",
+        "rightChar": "筹",
+        "note": "“筹”指办法、计策；“一筹莫展”表示一点办法也想不出来。这里不能用表示忧愁的“愁”。"
+      },
+      {
+        "index": 3,
+        "correctWord": "谈笑风生",
+        "wrongChar": "声",
+        "rightChar": "生",
+        "note": "形容谈吐风趣、气氛活跃，末字用“生”；“声”表示声音，不能替代这里的“生”。"
+      }
+    ]
   },
   {
     "id": "C3",
