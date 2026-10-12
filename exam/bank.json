@@ -13,7 +13,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "强迫、勉强读qiǎng；倔强读jiàng；强大读qiáng。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "基础选择题"
   },
   {
     "id": "C2",
@@ -29,7 +30,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "深邃、一筹莫展、谈笑风生是正确字形。“再接再厉”中的“厉”不能改成“励”。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "基础选择题"
   },
   {
     "id": "C3",
@@ -45,7 +47,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "“遵守规范”“坚守底线”搭配最恰当；不是把规范当成仅供观察的对象。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "基础选择题"
   },
   {
     "id": "C4",
@@ -61,7 +64,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "首当其冲指最先受到攻击或遭受灾难，不能用来表扬主动带头打扫。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "基础选择题"
   },
   {
     "id": "C5",
@@ -77,7 +81,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "A缺少主语，可删“通过”或“使”；C“提高工作习惯”搭配不当，应改“改善工作习惯”；D“听取目光”搭配错误。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "基础选择题"
   },
   {
     "id": "C6",
@@ -93,7 +98,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "先测量，发现异常及时记录，再复核，顺序为②①③。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "基础选择题"
   },
   {
     "id": "C7",
@@ -109,7 +115,8 @@
     "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
     "reference": "B",
     "explanation": "原文明确两层当月用水量都减少，未确认唯一原因或最佳提醒。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "阅读选择题"
   },
   {
     "id": "C8",
@@ -125,7 +132,8 @@
     "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
     "reference": "D",
     "explanation": "外出办公、使用人数不同等条件，会影响比较，不能急于下结论。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "阅读选择题"
   },
   {
     "id": "C9",
@@ -141,7 +149,8 @@
     "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
     "reference": "A",
     "explanation": "人均用水量把人数因素纳入统计，不能自动控制天气或证明因果。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "阅读选择题"
   },
   {
     "id": "C10",
@@ -157,7 +166,8 @@
     "passage": "研究者比较两种节水提醒方法。他们选取同一办公区的两个楼层，先记录两层连续四周的用水情况，再分别张贴不同内容的提醒。一个月后，两层用水量都比此前减少。研究者没有立即宣布其中一种提醒一定更有效，因为当月部分员工外出办公，两层实际使用人数也不相同。\n\n为了作进一步判断，研究者计划记录每天的使用人数，并比较人均用水量，还将把观察时间延长。用水量的变化可能与提醒有关，也可能受到天气、工作安排和设备维修等因素影响。一次比较提供了线索，却不能替代充分证据。把数据变成结论，需要核对统计范围，也需要解释变化的条件。",
     "reference": "C",
     "explanation": "原文强调统计范围与变化条件；一次观察不能替代充分证据。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "阅读选择题"
   },
   {
     "id": "C11",
@@ -173,7 +183,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "哄骗hǒng、起哄hòng、哄堂大笑hōng。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "基础选择题"
   },
   {
     "id": "C12",
@@ -189,7 +200,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "正确写法还有迫不及待、言简意赅、天翻地覆。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "基础选择题"
   },
   {
     "id": "C13",
@@ -205,7 +217,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "“天气转凉”与“仍按计划”形成转折，应用“但”。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "基础选择题"
   },
   {
     "id": "C14",
@@ -221,7 +234,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "走马观花形容粗略观察，与“逐项仔细地核对”矛盾。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "基础选择题"
   },
   {
     "id": "C15",
@@ -237,7 +251,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "“防止不再出现”否定不当。可改“防止出现漏检”，或“确保不再出现漏检”。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "基础选择题"
   },
   {
     "id": "C16",
@@ -253,7 +268,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "发现、分析、制定措施是先后步骤，“最后”衔接最合适。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "基础选择题"
   },
   {
     "id": "C17",
@@ -269,7 +285,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "把车间写成能“醒来”的人，属于拟人；“他是工人”只是身份判断。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "基础选择题"
   },
   {
     "id": "C18",
@@ -285,7 +302,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "B“改善合格率”搭配不当，可改“提高”；C“解决问题的出现”搭配不当；D仪器不能学习规范。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "基础选择题"
   },
   {
     "id": "C19",
@@ -296,7 +314,8 @@
     "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
     "reference": "从求快、想把数值改成一致，变为核对后如实记录。",
     "explanation": "依据：开始觉得步骤催促自己；后来遇到异常先核对，再如实写下。答案应把前后两方面都写出。",
-    "correct": null
+    "correct": null,
+    "cardType": "现代文阅读简答"
   },
   {
     "id": "C20",
@@ -307,7 +326,8 @@
     "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
     "reference": "严谨负责；善于引导年轻人。",
     "explanation": "记录更正写明原因、复核人，体现严谨；让小林按规范复测并说明记录的意义，体现耐心引导。",
-    "correct": null
+    "correct": null,
+    "cardType": "现代文阅读简答"
   },
   {
     "id": "C21",
@@ -318,7 +338,8 @@
     "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
     "reference": "比喻。",
     "explanation": "把笔比作尺，写出记录能衡量事实与责任的意义，突出如实记录的重要性，表达小林认识的变化。",
-    "correct": null
+    "correct": null,
+    "cardType": "现代文阅读简答"
   },
   {
     "id": "C22",
@@ -329,7 +350,8 @@
     "passage": "刚进车间时，小林总想把事情做得快一点。测量、记数、交表，一道道步骤似乎都在催促他。师傅给了他一本旧记录册，册子的边角卷了起来，每一处更正都写着原因和复核人的名字。\n\n一天，小林发现一组数值与前一班记录不同。他犹豫着说：“差得不多，要不要直接改成一样？”师傅没有立即回答，只把量具重新放好，让他按规范复测。他们核对测量条件，确认了差异确实存在，随后记录并报告。小林第一次明白，一张表不是交完就结束，它还会成为别人判断情况的依据。\n\n下班时，师傅把笔放回记录册旁：“快，是把流程做熟；认真，是让每一步都可信。”小林再看那本旧册子，觉得一处处更正不再难看。那支短短的笔，像一把尺，量着记录的真实性，也量着一个人的责任。从那以后，他遇到异常总先核对，再如实写下。",
     "reference": "更正体现真实、复核与责任，而非仅仅使页面不好看。",
     "explanation": "他理解记录会成为他人判断的依据，因此更重视可靠性；原文支持的核心是观念转变。",
-    "correct": null
+    "correct": null,
+    "cardType": "现代文阅读简答"
   },
   {
     "id": "C23",
@@ -340,7 +362,8 @@
     "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
     "reference": "善：擅长；既：已经。",
     "explanation": "“善制器”是擅长制作器具；“既成”指已经做成。",
-    "correct": null
+    "correct": null,
+    "cardType": "文言文阅读简答"
   },
   {
     "id": "C24",
@@ -351,7 +374,8 @@
     "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
     "reference": "学习却不练习，就像有尺子却不使用一样。",
     "explanation": "保留“不”的否定；而在此连接转折；犹可译为“如同、好像”。",
-    "correct": null
+    "correct": null,
+    "cardType": "文言文阅读简答"
   },
   {
     "id": "C25",
@@ -362,7 +386,8 @@
     "passage": "里有老工，善制器。少者从之学，初以为易。及亲为之，屡失其度，乃问于老工。老工曰：“学而不习，犹有尺而不用也。”少者日习其法，既成，亦不敢自满。",
     "reference": "起初觉得容易；实践失败后虚心请教、每天练习，做成后也不自满。",
     "explanation": "把“初以为易”“乃问”“日习”“不敢自满”组织成前后对比。",
-    "correct": null
+    "correct": null,
+    "cardType": "文言文阅读简答"
   },
   {
     "id": "C26",
@@ -373,7 +398,8 @@
     "passage": "邯郸驿里逢冬至，抱膝灯前影伴身。\n想得家中夜深坐，还应说着远行人。",
     "reference": "独自在旅馆灯前抱膝而坐，只有影子相伴；表达孤独与思乡。",
     "explanation": "冬至、驿馆、抱膝和影伴身共同构成证据。",
-    "correct": null
+    "correct": null,
+    "cardType": "诗歌鉴赏"
   },
   {
     "id": "C27",
@@ -384,7 +410,8 @@
     "passage": "邯郸驿里逢冬至，抱膝灯前影伴身。\n想得家中夜深坐，还应说着远行人。",
     "reference": "从家人的角度想象他们谈论远行的自己。",
     "explanation": "写想象中的“家人思我”，表达自己的“我思家”，属于虚写，使思念更具体。",
-    "correct": null
+    "correct": null,
+    "cardType": "诗歌鉴赏"
   },
   {
     "id": "M1",
@@ -400,7 +427,8 @@
     "passage": "",
     "reference": "B，{2}",
     "explanation": "交集找共同元素，只有2。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M2",
@@ -416,7 +444,8 @@
     "passage": "",
     "reference": "C，{1,3,5}",
     "explanation": "并集合并全部元素，再去掉重复的3。修订后D多了元素4，明确不等于正确集合。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M3",
@@ -432,7 +461,8 @@
     "passage": "",
     "reference": "D，5/6",
     "explanation": "通分成3/6＋2/6=5/6。不能分子相加、分母也相加。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M4",
@@ -448,7 +478,8 @@
     "passage": "",
     "reference": "A，3",
     "explanation": "3x=11−2=9，再除以3。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M5",
@@ -464,7 +495,8 @@
     "passage": "",
     "reference": "C，x＜−3",
     "explanation": "两边除以−2，不等号反向。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M6",
@@ -480,7 +512,8 @@
     "passage": "",
     "reference": "B，2和3",
     "explanation": "(x−2)(x−3)=0，两项分别取0。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M7",
@@ -496,7 +529,8 @@
     "passage": "",
     "reference": "C，7",
     "explanation": "f(2)=2×2²−1=8−1=7。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M8",
@@ -512,7 +546,8 @@
     "passage": "",
     "reference": "B，(−∞,5]",
     "explanation": "平方项≥0，前面是负号，所以y≤5，且x=2时取到5。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M9",
@@ -528,7 +563,8 @@
     "passage": "",
     "reference": "D，x≥3",
     "explanation": "根号内x−3≥0。x=3时可以取值0。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M10",
@@ -544,7 +580,8 @@
     "passage": "",
     "reference": "A，3",
     "explanation": "2³=8，所以log₂8=3。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M11",
@@ -560,7 +597,8 @@
     "passage": "",
     "reference": "B，32",
     "explanation": "同底数相乘指数相加：2⁽³⁺²⁾=2⁵=32。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M12",
@@ -576,7 +614,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "y=2x的斜率为正；其余三项在x＞0范围内递减。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M13",
@@ -592,7 +631,8 @@
     "passage": "",
     "reference": "C，11",
     "explanation": "a₅=3＋(5−1)×2=11。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M14",
@@ -608,7 +648,8 @@
     "passage": "",
     "reference": "D，55",
     "explanation": "S₁₀=10×(1＋10)/2=55。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M15",
@@ -624,7 +665,8 @@
     "passage": "",
     "reference": "B，54",
     "explanation": "a₄=2×3⁽⁴⁻¹⁾=2×27=54。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M16",
@@ -640,7 +682,8 @@
     "passage": "",
     "reference": "A，1/2",
     "explanation": "直接记特殊角值，也可由30°直角三角形理解。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M17",
@@ -656,7 +699,8 @@
     "passage": "",
     "reference": "C，1",
     "explanation": "cos60°=1/2，sin30°=1/2，相加为1。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M18",
@@ -672,7 +716,8 @@
     "passage": "",
     "reference": "D，1",
     "explanation": "tan45°=1。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M19",
@@ -688,7 +733,8 @@
     "passage": "",
     "reference": "B，2",
     "explanation": "k=(6−2)/(3−1)=4/2=2。分子是纵坐标之差。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M20",
@@ -704,7 +750,8 @@
     "passage": "",
     "reference": "A，(2,3)",
     "explanation": "把x=2代入，y=2×2−1=3。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M21",
@@ -720,7 +767,8 @@
     "passage": "",
     "reference": "C，5",
     "explanation": "距离=√(3²＋4²)=√25=5。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M22",
@@ -736,7 +784,8 @@
     "passage": "",
     "reference": "D，3",
     "explanation": "r²=9，所以非负半径r=3，不是9。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M23",
@@ -752,7 +801,8 @@
     "passage": "",
     "reference": "B，(3,1)",
     "explanation": "横坐标2＋1=3；纵坐标3＋(−2)=1。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M24",
@@ -768,7 +818,8 @@
     "passage": "",
     "reference": "A，0",
     "explanation": "数量积=2×1＋1×(−2)=0。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M25",
@@ -784,7 +835,8 @@
     "passage": "",
     "reference": "C，12",
     "explanation": "(8＋10＋12＋18)/4=48/4=12。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M26",
@@ -800,7 +852,8 @@
     "passage": "",
     "reference": "D，3/5",
     "explanation": "符合条件的3个红球，占总数5个。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "M27",
@@ -816,7 +869,8 @@
     "passage": "",
     "reference": "B，2/5",
     "explanation": "第一件正品概率4/6；第一件已为正品后，第二件正品概率3/5；相乘12/30=2/5。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "单选题"
   },
   {
     "id": "M28",
@@ -832,7 +886,8 @@
     "passage": "",
     "reference": "A，7",
     "explanation": "5个数已经排序，中间第3个是7。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "单选题"
   },
   {
     "id": "M29",
@@ -848,7 +903,8 @@
     "passage": "",
     "reference": "C，69",
     "explanation": "a₆=4＋5×3=19；S₆=6×(4＋19)/2=69。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "单选题"
   },
   {
     "id": "M30",
@@ -864,7 +920,8 @@
     "passage": "",
     "reference": "D，(4,0)",
     "explanation": "在x轴上y=0，0=−x＋4，所以x=4。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "单选题"
   },
   {
     "id": "E1",
@@ -880,7 +937,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "He配is，They配are。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E2",
@@ -896,7 +954,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "He配is，They配are。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E3",
@@ -912,7 +971,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E4",
@@ -928,7 +988,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E5",
@@ -944,7 +1005,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "every day用一般现在时，she后goes；yesterday提示过去，用played；next Sunday提示将来，用will visit。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E6",
@@ -960,7 +1022,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "since 2019表示从过去到现在的起点，这里用has worked。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E7",
@@ -976,7 +1039,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "interesting开头为元音音素，用an；具体星期用on。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E8",
@@ -992,7 +1056,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "interesting开头为元音音素，用an；具体星期用on。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E9",
@@ -1008,7 +1073,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "固定搭配listen to、be interested in。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E10",
@@ -1024,7 +1090,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "固定搭配listen to、be interested in。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E11",
@@ -1040,7 +1107,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E12",
@@ -1056,7 +1124,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E13",
@@ -1072,7 +1141,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "enjoy后接-ing；want后接to do；must后用动词原形。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E14",
@@ -1088,7 +1158,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "房间是被打扫的，yesterday是过去：was cleaned。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E15",
@@ -1104,7 +1175,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "useful的比较级为more useful，与than配合。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E16",
@@ -1120,7 +1192,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "“生病”是“待在家”的原因，用because。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E17",
@@ -1136,7 +1209,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "真实条件句主句用will，if从句表达将来条件时用一般现在时：rains。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E18",
@@ -1152,7 +1226,8 @@
     "passage": "",
     "reference": "B",
     "explanation": "place是地点，后面缺“在这个地方”的意思，用where。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E19",
@@ -1168,7 +1243,8 @@
     "passage": "",
     "reference": "A",
     "explanation": "book前需要“他的”his；many students是复数，there are。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E20",
@@ -1184,7 +1260,8 @@
     "passage": "",
     "reference": "D",
     "explanation": "book前需要“他的”his；many students是复数，there are。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E21",
@@ -1200,7 +1277,8 @@
     "passage": "",
     "reference": "C，city",
     "explanation": "city中的c读/s/，其余三个中的c读/k/。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "语音知识"
   },
   {
     "id": "E22",
@@ -1216,7 +1294,8 @@
     "passage": "",
     "reference": "B，team",
     "explanation": "team中的ea读/iː/；head、bread、ready中的ea读/e/。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "语音知识"
   },
   {
     "id": "E23",
@@ -1232,7 +1311,8 @@
     "passage": "",
     "reference": "A，though",
     "explanation": "though的gh不发音，其余三个gh发/f/。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "语音知识"
   },
   {
     "id": "E24",
@@ -1248,7 +1328,8 @@
     "passage": "",
     "reference": "D，climb",
     "explanation": "climb中的b不发音，其余三个发/b/。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "语音知识"
   },
   {
     "id": "E25",
@@ -1264,7 +1345,8 @@
     "passage": "",
     "reference": "C",
     "explanation": "huge表示巨大，接近very large。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "词汇与语法"
   },
   {
     "id": "E26",
@@ -1280,7 +1362,8 @@
     "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
     "reference": "A",
     "explanation": "第一句明确a small factory。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "阅读理解"
   },
   {
     "id": "E27",
@@ -1296,7 +1379,8 @@
     "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
     "reference": "C",
     "explanation": "check the numbers before handing in each form是直接依据。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "阅读理解"
   },
   {
     "id": "E28",
@@ -1312,7 +1396,8 @@
     "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
     "reference": "B",
     "explanation": "twenty minutes，且from Monday to Friday对应每个工作日。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "阅读理解"
   },
   {
     "id": "E29",
@@ -1328,7 +1413,8 @@
     "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
     "reference": "D",
     "explanation": "He wanted to read simple instructions…说明学习目的。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "阅读理解"
   },
   {
     "id": "E30",
@@ -1344,7 +1430,8 @@
     "passage": "Lin is a new worker in a small factory. At first, he did not know how to write clear records. He asked an experienced worker for help. The worker told him to check the numbers before handing in each form. Lin made a short checklist and used it every day. He also spent twenty minutes learning English after dinner from Monday to Friday. He wanted to read simple instructions without asking others every time. After a month, he made fewer mistakes in his records. He still asked questions when he was unsure. Lin learned that small, regular actions were more useful than a plan he never started.",
     "reference": "A",
     "explanation": "全文围绕小而规律的行动带来进步，最后一句给出总结。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "阅读理解"
   },
   {
     "id": "E31",
@@ -1360,7 +1447,8 @@
     "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
     "reference": "B",
     "explanation": "忙碌与仍然学习构成转折，用but。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "完形填空"
   },
   {
     "id": "E32",
@@ -1376,7 +1464,8 @@
     "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
     "reference": "D",
     "explanation": "enjoy后接动词-ing形式，reading。",
-    "correct": 3
+    "correct": 3,
+    "cardType": "完形填空"
   },
   {
     "id": "E33",
@@ -1392,7 +1481,8 @@
     "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
     "reference": "A",
     "explanation": "写在笔记本里，用in her notebook。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "完形填空"
   },
   {
     "id": "E34",
@@ -1408,7 +1498,8 @@
     "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
     "reference": "C",
     "explanation": "叙述过去几周的变化，practice helped her improve；help sb (to) do。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "完形填空"
   },
   {
     "id": "E35",
@@ -1424,7 +1515,8 @@
     "passage": "Last month, Mei joined an English class. She was busy, (E31) ____ she studied for ten minutes every evening. She enjoyed (E32) ____ short stories. When she did not know a word, she wrote it (E33) ____ her notebook. After a few weeks, she could understand more sentences. She was happy because practice (E34) ____ her improve. Next week, she (E35) ____ a simple email to her teacher.",
     "reference": "B",
     "explanation": "Next week提示将来，will write。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "完形填空"
   },
   {
     "id": "E36",
@@ -1441,7 +1533,8 @@
     "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
     "reference": "A",
     "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
-    "correct": 0
+    "correct": 0,
+    "cardType": "补全对话"
   },
   {
     "id": "E37",
@@ -1458,7 +1551,8 @@
     "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
     "reference": "C",
     "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
-    "correct": 2
+    "correct": 2,
+    "cardType": "补全对话"
   },
   {
     "id": "E38",
@@ -1475,7 +1569,8 @@
     "passage": "Tom: When shall we meet on Sunday?\nLi Hua: (E36) ____\nTom: Where shall we meet?\nLi Hua: (E37) ____\nTom: What should I bring?\nLi Hua: (E38) ____\n每个选项最多使用一次。",
     "reference": "B",
     "explanation": "when对应9点；where对应学校门口；what to bring对应笔记本。",
-    "correct": 1
+    "correct": 1,
+    "cardType": "补全对话"
   },
   {
     "id": "CW1",
@@ -1487,7 +1582,8 @@
     "passage": "",
     "correct": null,
     "reference": "中心回答题目；事例写清问题、行动、结果；分析认真如何体现责任；检查标题、分段、字数与错别字。",
-    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。",
+    "cardType": "作文"
   },
   {
     "id": "CW2",
@@ -1499,7 +1595,8 @@
     "passage": "",
     "correct": null,
     "reference": "论述学习方法与实际行动的关系；写出具体事例和分析；不能只有口号；检查结构与表达。",
-    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。",
+    "cardType": "作文"
   },
   {
     "id": "EW1",
@@ -1511,7 +1608,8 @@
     "passage": "",
     "correct": null,
     "reference": "覆盖邀请目的、日期、时间地点、照片展和笔记本；邮件格式正确，句子准确，字数符合要求。",
-    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。",
+    "cardType": "书面表达"
   },
   {
     "id": "EW2",
@@ -1523,6 +1621,7 @@
     "passage": "",
     "correct": null,
     "reference": "说明周末学习原因与目标；问清时间地点、费用和用品；使用礼貌问句；邮件格式与字数正确。",
-    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。"
+    "explanation": "主观题由老师根据原文和任务要求批阅，不按关键词自动判零分。",
+    "cardType": "书面表达"
   }
 ]
