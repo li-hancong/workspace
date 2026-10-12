@@ -174,4 +174,10 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{min-width:280px}bu
  .lesson-example{padding:14px;margin-bottom:20px}
  .lesson-memory{padding-left:12px}
  .lesson-diagram{padding:8px}
+ .question[data-math-stage=answer] .q-top{margin-bottom:8px}
+ .question[data-math-stage=answer] .study-switch{padding:2px;margin-bottom:12px}
+ .question[data-math-stage=answer] h2{margin-bottom:12px}
+ .question[data-math-stage=answer] .options{gap:10px}
+ .question[data-math-stage=answer] .option{min-height:48px;padding:10px 12px}
+ .question[data-math-stage=answer] .option b{line-height:1.5}
 }
